@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1374d48f2db4e12b5a2595d1f478b09, type: 3}
+  m_Name: Input System Handler
+  m_EditorClassIdentifier: 
+  scrollInput:
+    m_Name: Scroll Input
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 981c53f0-eba8-4b0c-a64d-65a3ab8e810b
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  scrollValue: 0.2
+  pointPosition:
+    m_Name: Point Position
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 1b73ab4f-1625-434a-90cf-9b4d2cab5db6
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0

@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec73015eeda9a7746a62d47a48b18696, type: 3}
+  m_Name: SwipeRotator
+  m_EditorClassIdentifier: 
+  _name: SwipeRotator
+  _propertyType: 0
+  _loggingEnabled: 0
+  _legacyMonaPlatforms: 0
+  _sourceUrl: 
+  _defaultVariables:
+    rid: 8029245374732697600
+  _priority: 0
+  _corePage:
+    rid: 8029245374732697601
+  _statePages: []
+  _began: 0
+  _monaTags:
+  - SwipeRotator
+  _monaAssets: []
+  _monaTagSource: {fileID: 11400000, guid: 2d86cb8c0bedf384c84e61a74d7b265b, type: 2}
+  _tileSet: {fileID: 11400000, guid: 97227b7a45df9364ebab91259570e7ed, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 8029245374732697600
+      type: {class: MonaBrainVariables, ns: Mona.SDK.Brains.Core.State, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _values: []
+    - rid: 8029245374732697601
+      type: {class: MonaBrainPage, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructions:
+        - rid: 8029245374732697602
+        - rid: 8029245374732697604
+        _name: Core
+        _isCore: 1
+        _isActive: 0
+    - rid: 8029245374732697602
+      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructionTiles:
+        - rid: 8029245374732697605
+        - rid: 8029245374732697606
+        _result: 1
+        _muted: 0
+    - rid: 8029245374732697604
+      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructionTiles:
+        - rid: 8029245374732697607
+        - rid: 8029245374732697608
+        _result: 1
+        _muted: 0
+    - rid: 8029245374732697605
+      type: {class: OnMessageInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnMessage
+        _name: On Message
+        _category: General
+        _muted: 0
+        _message: Left
+    - rid: 8029245374732697606
+      type: {class: SpinRightInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Movement, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: Spin Right
+        _name: "Rotate \u2192 Turn Right"
+        _category: Rotation
+        _muted: 0
+        _angle: 90
+        _angleValueName: 
+        _mode: 1
+        _value: 0.5
+        _valueValueName: 
+        _easing: 1
+        _onlyTurnWhenMoving: 0
+        _lookStraightAhead: 0
+    - rid: 8029245374732697607
+      type: {class: OnMessageInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnMessage
+        _name: On Message
+        _category: General
+        _muted: 0
+        _message: Right
+    - rid: 8029245374732697608
+      type: {class: SpinLeftInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Movement, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: Spin Left
+        _name: "Rotate \u2190 Turn Left"
+        _category: Rotation
+        _muted: 0
+        _angle: 90
+        _angleValueName: 
+        _mode: 1
+        _value: 0.5
+        _valueValueName: 
+        _easing: 1
+        _onlyTurnWhenMoving: 0
+        _lookStraightAhead: 0

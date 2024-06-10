@@ -1,0 +1,20 @@
+{
+    "name": "Monaverse.Modal",
+    "rootNamespace": "Monaverse.Modal",
+    "references": [
+        "Unity.TextMeshPro",
+        "Monaverse.Core",
+        "Monaverse.Api",
+        "WalletConnectUnity.Core",
+        "link.magic.unity.sdk"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

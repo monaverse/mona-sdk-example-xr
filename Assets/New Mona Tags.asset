@@ -1,0 +1,683 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0822c4259f80e794db2ee017d0fef63a, type: 3}
+  m_Name: New Mona Tags
+  m_EditorClassIdentifier: 
+  _tags:
+  - rid: 8029245330632999048
+  - rid: 8029245330632999054
+  - rid: 8029245330632999013
+  - rid: 8029245330632999037
+  - rid: 8029245330632999008
+  - rid: 8029245330632999018
+  - rid: 8029245330632999030
+  - rid: 8029245330632999066
+  - rid: 8029245330632999077
+  - rid: 8029245330632999040
+  - rid: 8029245330632999035
+  - rid: 8029245330632999022
+  - rid: 8029245330632999063
+  - rid: 8029245330632999004
+  - rid: 8029245330632999036
+  - rid: 8029245330632999025
+  - rid: 8029245330632999068
+  - rid: 8029245330632999011
+  - rid: 8029245330632999057
+  - rid: 8029245330632999049
+  - rid: 8029245330632999047
+  - rid: 8029245330632999009
+  - rid: 8029245330632999007
+  - rid: 8029245330632999065
+  - rid: 8029245330632999051
+  - rid: 8029245330632999053
+  - rid: 8029245330632999073
+  - rid: 8029245330632999042
+  - rid: 8029245330632999019
+  - rid: 8029245330632999079
+  - rid: 8029245330632999058
+  - rid: 8029245330632999046
+  - rid: 8029245330632999041
+  - rid: 8029245330632999039
+  - rid: 8029245330632999055
+  - rid: 8029245330632999056
+  - rid: 8029245330632999069
+  - rid: 8029245330632999074
+  - rid: 8029245330632999090
+  - rid: 8029245330632999083
+  - rid: 8029245330632999082
+  - rid: 8029245330632999089
+  - rid: 8029245330632999080
+  - rid: 8029245330632999091
+  - rid: 8029245330632999081
+  - rid: 8029245330632999088
+  - rid: 8029245330632999027
+  - rid: 8029245330632999012
+  - rid: 8029245330632999076
+  - rid: 8029245330632999010
+  - rid: 8029245330632999020
+  - rid: 8029245330632999071
+  - rid: 8029245330632999031
+  - rid: 8029245330632999005
+  - rid: 8029245330632999060
+  - rid: 8029245330632999044
+  - rid: 8029245330632999043
+  - rid: 8029245330632999006
+  - rid: 8029245330632999075
+  - rid: 8029245330632999094
+  - rid: 8029245330632999087
+  - rid: 8029245330632999086
+  - rid: 8029245330632999093
+  - rid: 8029245330632999084
+  - rid: 8029245330632999095
+  - rid: 8029245330632999085
+  - rid: 8029245330632999092
+  - rid: 8029245330632999070
+  - rid: 8029245330632999034
+  - rid: 8029245330632999033
+  - rid: 8029245330632999032
+  - rid: 8029245330632999061
+  - rid: 8029245330632999078
+  - rid: 8029245330632999028
+  - rid: 8029245330632999064
+  - rid: 8029245330632999038
+  - rid: 8029245330632999029
+  - rid: 8029245330632999014
+  - rid: 8029245330632999015
+  - rid: 8029245330632999016
+  - rid: 8029245330632999017
+  - rid: 8029245330632999062
+  - rid: 8029245330632999045
+  - rid: 8029245330632999050
+  - rid: 8029245330632999072
+  - rid: 8029245330632999021
+  - rid: 8029245330632999023
+  - rid: 8029245330632999052
+  - rid: 8029245330632999067
+  - rid: 8029245330632999024
+  - rid: 8029245330632999059
+  - rid: 8029245330632999026
+  - rid: 8029245385937780928
+  - rid: 8029245375488720896
+  - rid: 8029245374732697603
+  references:
+    version: 2
+    RefIds:
+    - rid: 8029245330632999004
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Default
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999005
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Player
+        _isPlayerTag: 1
+        _isEditable: 0
+    - rid: 8029245330632999006
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: RemotePlayer
+        _isPlayerTag: 1
+        _isEditable: 0
+    - rid: 8029245330632999007
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: GameController
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999008
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Camera
+        _isPlayerTag: 1
+        _isEditable: 0
+    - rid: 8029245330632999009
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Friendly
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999010
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Neutral
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999011
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Enemy
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999012
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Minion
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999013
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Boss
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999014
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: TeamA
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999015
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: TeamB
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999016
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: TeamC
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999017
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: TeamD
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999018
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Carnivore
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999019
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Herbivore
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999020
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Omnivore
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999021
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Vegitation
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999022
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Corpse
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999023
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Vehicle
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999024
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Weapon
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999025
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Door
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999026
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Window
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999027
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Lock
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999028
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Stairs
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999029
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Table
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999030
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Chair
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999031
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Picture
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999032
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: SpawnPoint
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999033
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Spawner
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999034
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: SpawnedObject
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999035
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Collectible
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999036
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Destructible
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999037
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Button
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999038
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Switch
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999039
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: KeyItem
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999040
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Coin
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999041
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Key
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999042
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Heart
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999043
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: PowerUp
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999044
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: PowerDown
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999045
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Treasure
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999046
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: InventoryItem
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999047
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Food
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999048
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Ball
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999049
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Flag
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999050
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: TriggerVolume
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999051
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Ground
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999052
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Water
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999053
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Hazard
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999054
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Barrier
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999055
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Killzone
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999056
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Lava
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999057
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Fire
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999058
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Ice
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999059
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Wind
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999060
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Poison
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999061
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Spikes
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999062
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Trap
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999063
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: DeathPlane
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999064
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Start
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999065
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Goal
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999066
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Checkpoint
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999067
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Waypoint
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999068
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Editable
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999069
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Layout
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999070
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: SceneSpace
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999071
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Pausable
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999072
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Unpausable
+        _isPlayerTag: 0
+        _isEditable: 0
+    - rid: 8029245330632999073
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Head
+        _isPlayerTag: 1
+        _isEditable: 0
+    - rid: 8029245330632999074
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: LeftEye
+        _isPlayerTag: 1
+        _isEditable: 0
+    - rid: 8029245330632999075
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: RightEye
+        _isPlayerTag: 1
+        _isEditable: 0
+    - rid: 8029245330632999076
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Neck
+        _isPlayerTag: 1
+        _isEditable: 0
+    - rid: 8029245330632999077
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Chest
+        _isPlayerTag: 1
+        _isEditable: 0
+    - rid: 8029245330632999078
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Spine
+        _isPlayerTag: 1
+        _isEditable: 0
+    - rid: 8029245330632999079
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Hips
+        _isPlayerTag: 1
+        _isEditable: 0
+    - rid: 8029245330632999080
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: LeftShoulder
+        _isPlayerTag: 1
+        _isEditable: 0
+    - rid: 8029245330632999081
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: LeftUpperArm
+        _isPlayerTag: 1
+        _isEditable: 0
+    - rid: 8029245330632999082
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: LeftLowerArm
+        _isPlayerTag: 1
+        _isEditable: 0
+    - rid: 8029245330632999083
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: LeftHand
+        _isPlayerTag: 1
+        _isEditable: 0
+    - rid: 8029245330632999084
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: RightShoulder
+        _isPlayerTag: 1
+        _isEditable: 0
+    - rid: 8029245330632999085
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: RightUpperArm
+        _isPlayerTag: 1
+        _isEditable: 0
+    - rid: 8029245330632999086
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: RightLowerArm
+        _isPlayerTag: 1
+        _isEditable: 0
+    - rid: 8029245330632999087
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: RightHand
+        _isPlayerTag: 1
+        _isEditable: 0
+    - rid: 8029245330632999088
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: LeftUpperLeg
+        _isPlayerTag: 1
+        _isEditable: 0
+    - rid: 8029245330632999089
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: LeftLowerLeg
+        _isPlayerTag: 1
+        _isEditable: 0
+    - rid: 8029245330632999090
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: LeftFoot
+        _isPlayerTag: 1
+        _isEditable: 0
+    - rid: 8029245330632999091
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: LeftToes
+        _isPlayerTag: 1
+        _isEditable: 0
+    - rid: 8029245330632999092
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: RightUpperLeg
+        _isPlayerTag: 1
+        _isEditable: 0
+    - rid: 8029245330632999093
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: RightLowerLeg
+        _isPlayerTag: 1
+        _isEditable: 0
+    - rid: 8029245330632999094
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: RightFoot
+        _isPlayerTag: 1
+        _isEditable: 0
+    - rid: 8029245330632999095
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: RightToes
+        _isPlayerTag: 1
+        _isEditable: 0
+    - rid: 8029245374732697603
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: SwipeRotator
+        _isPlayerTag: 0
+        _isEditable: 1
+    - rid: 8029245375488720896
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Spawned
+        _isPlayerTag: 0
+        _isEditable: 1
+    - rid: 8029245385937780928
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: TempGround
+        _isPlayerTag: 0
+        _isEditable: 1
