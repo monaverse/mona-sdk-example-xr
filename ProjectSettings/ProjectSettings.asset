@@ -832,7 +832,13 @@ PlayerSettings:
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
   cloudServicesEnabled:
+    Build: 0
+    Game Performance: 0
+    Legacy Analytics: 0
+    Purchasing: 0
+    UDP: 0
     UNet: 1
+    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -852,11 +858,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: 823ddedb-390f-4f31-914c-a387403eede6
+  cloudProjectId: e24ea223-8522-452d-8f55-60eace2c52b1
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: TestMagicLink
-  organizationId: ryangreen8
+  organizationId: jnoland52
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
