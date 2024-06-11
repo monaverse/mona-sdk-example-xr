@@ -179,7 +179,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4396487877703078339
 Transform:
   m_ObjectHideFlags: 0
@@ -227,6 +227,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4795712815910107399}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2523617344700907799
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1712282678050150525}
+  - component: {fileID: 6683376400402053071}
+  m_Layer: 0
+  m_Name: GLTFLoader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1712282678050150525
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2523617344700907799}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.1181006, z: -0.14350748}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2289238343986839164}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6683376400402053071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2523617344700907799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beb370a8a0cd35841b2bc137cd7aca2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gLTF: {fileID: 4523997893339703753}
 --- !u!1 &3411177989087503877
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,6 +772,8 @@ Transform:
   - {fileID: 997889886076205465}
   - {fileID: 6255296725663555063}
   - {fileID: 4326572083135989903}
+  - {fileID: 8605286287298119036}
+  - {fileID: 1712282678050150525}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &3791308560500055811
@@ -992,7 +1039,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &997889886076205465
 Transform:
   m_ObjectHideFlags: 0
@@ -2223,6 +2270,70 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4795712815910107399}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8225670148249912897
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8605286287298119036}
+  - component: {fileID: 4523997893339703753}
+  m_Layer: 0
+  m_Name: GLB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8605286287298119036
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8225670148249912897}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2289238343986839164}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4523997893339703753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8225670148249912897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9087a95f22bcee64ebc45f6deec08714, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GLTFUri: 
+  Multithreaded: 1
+  UseStream: 0
+  AppendStreamingAssets: 0
+  PlayAnimationOnLoad: 1
+  HideSceneObjDuringLoad: 0
+  Factory: {fileID: 0}
+  loadOnStart: 0
+  RetryCount: 10
+  RetryTimeout: 2
+  MaximumLod: 300
+  Timeout: 8
+  Collider: 0
+  shaderOverride: {fileID: 0}
+  ImportNormals: 0
+  ImportTangents: 0
+  SwapUVs: 0
+  blendShapeFrameWeight:
+    _option: 0
+    _multiplier: 1
 --- !u!1 &8720338009367458657
 GameObject:
   m_ObjectHideFlags: 0
