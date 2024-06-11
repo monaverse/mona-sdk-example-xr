@@ -2,9 +2,9 @@
   "dependencies": {
     "com.meta.xr.sdk.all": "65.0.0",
     "com.meta.xr.sdk.interaction.ovr.samples": "file:com.meta.xr.sdk.interaction.ovr.samples-65.0.0/package",
-    "com.monaverse.brainssdk": "file:C:/repos/MonaBrainsSDK",
-    "com.monaverse.coresdk": "file:C:/repos/MonaCoreSDK",
-    "com.monaverse.unitygltf": "file:C:/repos/MonaUnityGLTF",
+    "com.monaverse.brainssdk": "0.12.0",
+    "com.monaverse.coresdk": "0.9.0",
+    "com.monaverse.unitygltf": "0.4.0",
     "com.nethereum.unity": "4.19.2",
     "com.unity.collab-proxy": "2.3.1",
     "com.unity.feature.development": "1.0.1",
@@ -47,15 +47,6 @@
     "com.unity.modules.xr": "1.0.0"
   },
   "scopedRegistries": [
-    {
-      "name": "Voltstro UPM",
-      "url": "https://upm-pkgs.voltstro.dev",
-      "scopes": [
-        "dev.voltstro",
-        "org.nuget",
-        "com.cysharp.unitask"
-      ]
-    },
     {
       "name": "OpenUPM",
       "url": "https://package.openupm.com",
