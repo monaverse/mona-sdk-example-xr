@@ -27,9 +27,7 @@ namespace Monaverse.Core
             /// WalletConnect Project ID (https://cloud.walletconnect.com/app).
             /// </summary>
             public string walletConnectProjectId;
-
-            public string walletMagicLinkProjectId;
-
+            
             /// <summary>
             /// The Monaverse API environment to use.
             /// </summary>
@@ -122,12 +120,12 @@ namespace Monaverse.Core
         /// </summary>
         /// <returns> A task that completes when the wallet connection is complete.
         /// If successful, the task returns the address of the connected wallet.</returns>
-        public Task<string> ConnectWallet(MonaWalletProvider monaWalletProvider = MonaWalletProvider.WalletConnect, int chainId = 1)
+        public Task<string> ConnectWallet()
         {
             return ConnectWallet(new MonaWalletConnection
             {
-                ChainId = chainId,
-                MonaWalletProvider = monaWalletProvider
+                ChainId = 1,
+                MonaWalletProvider = MonaWalletProvider.WalletConnect
             });
         }
         
@@ -179,7 +177,6 @@ namespace Monaverse.Core
 
             if (ActiveWallet == null)
             {
-                Debug.Log($"{nameof(Disconnect)} no active wallet, disconnecting");
                 OnDisconnected(this, EventArgs.Empty);
                 return;
             }

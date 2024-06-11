@@ -4,9 +4,7 @@
     "references": [
         "Unity.TextMeshPro",
         "Monaverse.Core",
-        "Monaverse.Api",
-        "WalletConnectUnity.Core",
-        "link.magic.unity.sdk"
+        "Monaverse.Api"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

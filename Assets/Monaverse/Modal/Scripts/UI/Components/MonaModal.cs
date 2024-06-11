@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using WalletConnectUnity.Core.Utils;
 
 namespace Monaverse.Modal.UI.Components
 {
@@ -113,17 +112,13 @@ namespace Monaverse.Modal.UI.Components
 
         public IEnumerator ResizeModalRoutine(float targetHeight)
         {
-            //TODO 
-            yield break;
-
             if (_resizingModal) yield break;
             _resizingModal = true;
 
             targetHeight = targetHeight + Header.Height + 12 + _footerRectTransform.rect.height;
 
 #if UNITY_ANDROID || UNITY_IOS
-            if (DeviceUtils.GetDeviceType() == WalletConnectUnity.Core.Utils.DeviceType.Phone)
-                targetHeight += 8;
+            targetHeight += 8;
 #endif
 
             var rootTransformSizeDelta = _rectTransform.sizeDelta;

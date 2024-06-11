@@ -6,6 +6,5 @@ namespace Monaverse.Core
     {
         public MonaWalletProvider MonaWalletProvider { get; set; }
         public BigInteger ChainId { get; set; }
-        public string Email { get; set; }
     }
 }

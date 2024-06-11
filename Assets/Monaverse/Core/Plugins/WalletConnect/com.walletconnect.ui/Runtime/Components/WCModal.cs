@@ -116,8 +116,6 @@ namespace WalletConnectUnity.UI
 
         public IEnumerator ResizeModalRoutine(float targetHeight)
         {
-            //TODO
-            yield break;
             if (_resizingModal) yield break;
             _resizingModal = true;
 

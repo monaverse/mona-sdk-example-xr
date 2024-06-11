@@ -34,7 +34,6 @@ namespace Monaverse.Modal.UI.Components
 
             Assert.IsNotNull(Modal, $"Missing {nameof(Modal)} reference in {name}");
 
-            Debug.Log($"{nameof(OnLeftButtonClicked)} Awake");
             LeftButton.onClick.AddListener(OnLeftButtonClicked);
             RightButton.onClick.AddListener(OnRightButtonClicked);
 
@@ -43,7 +42,6 @@ namespace Monaverse.Modal.UI.Components
 
         private void OnLeftButtonClicked()
         {
-            Debug.Log($"{nameof(OnLeftButtonClicked)} click");
             Modal.CloseView();
         }
 

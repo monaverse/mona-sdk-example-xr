@@ -35,6 +35,7 @@ namespace Monaverse.Examples
         {
             Debug.Log("[MonaverseModalExample.OnImportCollectibleClicked] " + collectible.Title);
             _importedItem.SetCollectible(collectible);
+            Debug.Log("Getting gltf model from url: " + "blank");
         }
         
         /// <summary>

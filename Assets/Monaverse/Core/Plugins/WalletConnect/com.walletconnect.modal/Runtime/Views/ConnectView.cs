@@ -80,7 +80,7 @@ namespace WalletConnectUnity.Modal.Views
 
             base.Show(modal, effectCoroutine, options);
 
-#if ((!UNITY_IOS && !UNITY_ANDROID) || VR_WALLET)
+#if (!UNITY_IOS && !UNITY_ANDROID)
             await ShowQrCodeAndCopyButtonAsync();
 #else
             await GenerateUri();

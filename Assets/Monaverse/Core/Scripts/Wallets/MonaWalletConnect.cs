@@ -34,12 +34,7 @@ namespace Monaverse.Wallets
             {
                 if (MonaWalletConnectUI.Instance == null)
                 {
-                    var wrapper = GameObject.Instantiate(MonaverseManager.Instance.WalletConnectPrefab);
-                    wrapper.transform.SetParent(MonaverseManager.Instance.WalletConnectPrefabParent);
-                    wrapper.transform.localScale = Vector3.one;
-                    wrapper.transform.localPosition = -Vector3.forward * .01f;
-                    wrapper.transform.localEulerAngles = Vector3.zero;
-
+                    GameObject.Instantiate(MonaverseManager.Instance.WalletConnectPrefab);
                     await new WaitForSeconds(0.5f);
                 }
 

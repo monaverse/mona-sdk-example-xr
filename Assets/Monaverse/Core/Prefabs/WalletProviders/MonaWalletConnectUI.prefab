@@ -73,18 +73,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1722132981, guid: 04f87422bbc7e41e18fe377c29510e85, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2061693628, guid: 04f87422bbc7e41e18fe377c29510e85, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2061693628, guid: 04f87422bbc7e41e18fe377c29510e85, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2492388633855551312, guid: 04f87422bbc7e41e18fe377c29510e85, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -189,30 +177,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7004916108560762031, guid: 04f87422bbc7e41e18fe377c29510e85, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7004916108560762031, guid: 04f87422bbc7e41e18fe377c29510e85, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7004916108560762031, guid: 04f87422bbc7e41e18fe377c29510e85, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7004916108560762031, guid: 04f87422bbc7e41e18fe377c29510e85, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7004916108560762031, guid: 04f87422bbc7e41e18fe377c29510e85, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8234168566491363249, guid: 04f87422bbc7e41e18fe377c29510e85, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.0002033948
-      objectReference: {fileID: 0}
     - target: {fileID: 8234168566514961838, guid: 04f87422bbc7e41e18fe377c29510e85, type: 3}
       propertyPath: m_Name
       value: WalletConnectModal
@@ -257,17 +221,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8234168566968179980, guid: 04f87422bbc7e41e18fe377c29510e85, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.003
-      objectReference: {fileID: 0}
-    - target: {fileID: 8234168566968179980, guid: 04f87422bbc7e41e18fe377c29510e85, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.003
-      objectReference: {fileID: 0}
-    - target: {fileID: 8234168566968179980, guid: 04f87422bbc7e41e18fe377c29510e85, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.003
+    - target: {fileID: 8234168566968179978, guid: 04f87422bbc7e41e18fe377c29510e85, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

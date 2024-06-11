@@ -64,7 +64,8 @@ namespace WalletConnectUnity.UI
             yield return new WaitForSecondsRealtime(0.1f);
 
             ApplyScreenOrientation(orientation);
-            if (IsActive && parentModal != null)
+
+            if (IsActive)
                 parentModal.StartCoroutine(parentModal.ResizeModalRoutine(GetViewHeight()));
         }
 

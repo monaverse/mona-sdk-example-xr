@@ -32,6 +32,5 @@ namespace Monaverse.Modal.UI.Views
                 MonaDebug.LogError("[MonaverseModal] SelectWalletConnect Exception: " + exception.Message);
             }
         }
-
     }
 }

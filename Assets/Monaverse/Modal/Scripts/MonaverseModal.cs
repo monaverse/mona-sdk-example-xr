@@ -4,7 +4,6 @@ using Monaverse.Api.Modules.Collectibles.Dtos;
 using Monaverse.Core.Utils;
 using Monaverse.Modal.UI.Components;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace Monaverse.Modal
 {
@@ -41,10 +40,7 @@ namespace Monaverse.Modal
         /// Called when the MonaverseModal is closed
         /// </summary>
         public static event EventHandler ModalClosed;
-
-        public UnityEvent OnModalOpened;
-        public UnityEvent OnModalClosed;
-
+        
         /// <summary>
         /// Called when the import button is clicked in a collectible details view
         /// Only collectibles compatible with your application can be imported
@@ -137,19 +133,11 @@ namespace Monaverse.Modal
             
             Instance.Modal.CloseModal();
         }
-
+        
         private static void Initialize()
         {
-            Instance.Modal.Opened += (_, _) =>
-            {
-                ModalOpened?.Invoke(Instance, EventArgs.Empty);
-                Instance.OnModalOpened?.Invoke();
-            };
-            Instance.Modal.Closed += (_, _) =>
-            {
-                ModalClosed?.Invoke(Instance, EventArgs.Empty);
-                Instance.OnModalClosed?.Invoke();
-            };
+            Instance.Modal.Opened += (_, _) => ModalOpened?.Invoke(Instance, EventArgs.Empty);
+            Instance.Modal.Closed += (_, _) => ModalClosed?.Invoke(Instance, EventArgs.Empty);
             
             IsReady = true;
             Ready?.Invoke(Instance, EventArgs.Empty);

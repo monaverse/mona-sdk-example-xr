@@ -199,7 +199,7 @@ namespace Monaverse.Modal.UI.Views
                     price = collectible.Price,
                     onImportClick = () =>
                     {
-                        //parentModal.CloseModal();
+                        parentModal.CloseModal();
                         MonaverseModal.TriggerImportCollectibleClicked(collectible);
                     },
                     onPreviewClick = () =>
@@ -227,7 +227,6 @@ namespace Monaverse.Modal.UI.Views
         
         private MonaRemoteSprite GetSprite(string collectibleImageUrl)
         {
-            if (string.IsNullOrEmpty(collectibleImageUrl)) return null;
             if (_sprites.TryGetValue(collectibleImageUrl, out var sprite))
                 return sprite;
 
