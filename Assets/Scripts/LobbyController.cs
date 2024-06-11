@@ -171,9 +171,6 @@ public class LobbyController : MonoBehaviour
         // Set the text of the Text component to the lobbyName
         lobbyText.GetComponent<TMP_Text>().text = lobbyName;
         lobbyText.transform.localPosition = Vector3.zero;
-        LobbyManager lobbyManager = lobbyText.GetComponent<LobbyManager>();
-        lobbyManager.InitData();
-        lobbyManager.SetLobbyData(lobbyName, lobbyId);
     }
 
     public async void JoinLobby()
@@ -213,6 +210,12 @@ public class LobbyController : MonoBehaviour
             {
                 {
                     "ExampleMemberPlayerData",
+                    new PlayerDataObject(
+                        visibility: PlayerDataObject.VisibilityOptions.Member, // Visible only to members of the lobby.
+                        value: "ExampleMemberPlayerData")
+                },
+                {
+                    "PLAYER_GLB",
                     new PlayerDataObject(
                         visibility: PlayerDataObject.VisibilityOptions.Member, // Visible only to members of the lobby.
                         value: "ExampleMemberPlayerData")

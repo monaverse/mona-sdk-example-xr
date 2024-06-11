@@ -44,6 +44,10 @@ namespace Monaverse.Examples
             gLTF.GLTFUri = uri;
             Debug.Log("Getting gltf model from url: " + uri);
             await gLTF.Load();
+
+            // Find NetworkManager and get the LobbyManager component
+            // and set the player uri
+            GameObject.Find("NetworkManager").GetComponent<LobbyManager>().SetPlayerLobbyUri(uri);
         }
         
         /// <summary>

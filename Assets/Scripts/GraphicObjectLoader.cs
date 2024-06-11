@@ -8,7 +8,9 @@ public class GraphicObjectLoader : MonoBehaviour
     // Start is called before the first frame update
     private async void Start()
     {
-        gLTF.GLTFUri = "https://content.mona.gallery/vppjizac-qheh-loca-grqs-cfbfllx0.vrm";
+        LobbyManager lobbyManager = GameObject.Find("NetworkManager").GetComponent<LobbyManager>();
+        string uri = lobbyManager.GetPlayerLobbyUri();
+        gLTF.GLTFUri = uri;
         await gLTF.Load();
     }
 }

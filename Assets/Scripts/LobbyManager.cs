@@ -6,7 +6,7 @@ public class LobbyManager : MonoBehaviour
 {
     private LobbyData lobbyData;
 
-    public void InitData()
+    private void Start()
     {
         // Create a new instance of the LobbyData class
         lobbyData = ScriptableObject.CreateInstance<LobbyData>();
@@ -23,5 +23,15 @@ public class LobbyManager : MonoBehaviour
     {
         // Return the lobby data
         return lobbyData.GetLobbyId();
+    }
+
+    public string GetPlayerLobbyUri()
+    {
+        return lobbyData.GetLobbyPlayerUri();
+    }
+
+    public void SetPlayerLobbyUri(string lobbyUri)
+    {
+        lobbyData.SetLobbyPlayerUri(lobbyUri);
     }
 }
