@@ -1,7 +1,9 @@
 using System.Collections.Generic;
 using Monaverse.Api.Modules.Collectibles.Dtos;
+using Monaverse.Core.Utils;
 using Monaverse.Modal;
 using UnityEngine;
+using UnityGLTF;
 
 namespace Monaverse.Examples
 {
@@ -9,6 +11,8 @@ namespace Monaverse.Examples
     {
         [SerializeField] private MonaCollectibleListExample _compatibleItems;
         [SerializeField] private MonaCollectibleItemExample _importedItem;
+
+        public GLTFComponent gLTF;
 
         private void Start()
         {
@@ -32,11 +36,14 @@ namespace Monaverse.Examples
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="collectible">The collectible selected for import</param>
-        private void OnImportCollectibleClicked(object sender, CollectibleDto collectible)
+        private async void OnImportCollectibleClicked(object sender, CollectibleDto collectible)
         {
+            string uri = collectible.Versions[collectible.ActiveVersion].Asset;
             Debug.Log("[MonaverseModalExample.OnImportCollectibleClicked] " + collectible.Title);
             _importedItem.SetCollectible(collectible);
-            Debug.Log("Getting gltf model from url: " + "blank");
+            gLTF.GLTFUri = uri;
+            Debug.Log("Getting gltf model from url: " + uri);
+            await gLTF.Load();
         }
         
         /// <summary>

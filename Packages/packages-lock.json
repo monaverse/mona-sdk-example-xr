@@ -155,9 +155,9 @@
       "url": "https://package.openupm.com"
     },
     "com.monaverse.unitygltf": {
-      "version": "0.4.0",
+      "version": "https://github.com/monaverse/MonaUnityGLTF.git",
       "depth": 0,
-      "source": "registry",
+      "source": "git",
       "dependencies": {
         "com.unity.nuget.newtonsoft-json": "2.0.0",
         "com.unity.modules.imageconversion": "1.0.0",
@@ -166,7 +166,7 @@
         "com.monaverse.brainssdk": "0.12.0",
         "com.monaverse.coresdk": "0.9.0"
       },
-      "url": "https://package.openupm.com"
+      "hash": "5ca576f4096823841a565cfc00cf02fede4b4a97"
     },
     "com.nethereum.unity": {
       "version": "4.19.2",
