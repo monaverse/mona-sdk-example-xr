@@ -271,7 +271,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beb370a8a0cd35841b2bc137cd7aca2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gLTF: {fileID: 4523997893339703753}
+  gLTF: {fileID: 0}
+  _glb: {fileID: 8581509770112823423}
 --- !u!1 &3411177989087503877
 GameObject:
   m_ObjectHideFlags: 0
@@ -1553,7 +1554,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6114683494395432749}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.314797, y: -0.0018431265, z: 0.0006112905, w: 0.94915706}
+  m_LocalRotation: {x: 0.31479698, y: -0.0018430938, z: 0.00061127957, w: 0.94915706}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2074,7 +2075,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7736668934518092644}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.28172502, y: -0.0018631646, z: 0.0005470597, w: 0.9594932}
+  m_LocalRotation: {x: 0.28172502, y: -0.0018631977, z: 0.00054706936, w: 0.9594932}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2185,7 +2186,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7867317160020841101}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.24776469, y: -0.0018812971, z: 0.00048112118, w: 0.9688183}
+  m_LocalRotation: {x: 0.24776469, y: -0.0018812804, z: 0.0004811169, w: 0.9688183}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2279,7 +2280,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8605286287298119036}
-  - component: {fileID: 4523997893339703753}
+  - component: {fileID: 8581509770112823423}
   m_Layer: 0
   m_Name: GLB
   m_TagString: Untagged
@@ -2302,7 +2303,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2289238343986839164}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4523997893339703753
+--- !u!114 &8581509770112823423
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2311,29 +2312,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8225670148249912897}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9087a95f22bcee64ebc45f6deec08714, type: 3}
+  m_Script: {fileID: 11500000, guid: f1c1d47b4e2b8444ea77069666e67c52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GLTFUri: 
-  Multithreaded: 1
-  UseStream: 0
-  AppendStreamingAssets: 0
-  PlayAnimationOnLoad: 1
-  HideSceneObjDuringLoad: 0
-  Factory: {fileID: 0}
-  loadOnStart: 0
-  RetryCount: 10
-  RetryTimeout: 2
-  MaximumLod: 300
-  Timeout: 8
-  Collider: 0
-  shaderOverride: {fileID: 0}
-  ImportNormals: 0
-  ImportTangents: 0
-  SwapUVs: 0
-  blendShapeFrameWeight:
-    _option: 0
-    _multiplier: 1
 --- !u!1 &8720338009367458657
 GameObject:
   m_ObjectHideFlags: 0

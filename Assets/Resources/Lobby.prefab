@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 5403481124813743373}
   - component: {fileID: 7556276773509274005}
   - component: {fileID: 4135748524673556822}
-  - component: {fileID: 8588213867726395712}
   m_Layer: 5
   m_Name: Lobby
   m_TagString: Untagged
@@ -205,15 +204,3 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 5403481124813743373}
---- !u!114 &8588213867726395712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2306285567103816360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bee14786e080a848b5dc29c967eb546, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

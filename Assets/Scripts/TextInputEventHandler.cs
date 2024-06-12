@@ -21,8 +21,7 @@ public class TextInputEventHandler : MonoBehaviour, ISelectHandler
     public void HandleSelect(string arg0)
     {
         Debug.Log("TMP Text selected: " + arg0);
-        LobbyManager lobbyManager = gameObject.GetComponent<LobbyManager>();
-        string lobbyId = lobbyManager.GetLobbyDataLobbyId();
+        string lobbyId = GameObject.Find("NetworkManager").GetComponent<LobbyManager>().GetLobbyDataLobbyId();
         Debug.Log("Lobby ID: " + lobbyId);
         LobbyController lobbyController = GameObject.Find("Lobby").GetComponent<LobbyController>();
         lobbyController.SetSelectedLobbyId(lobbyId);

@@ -171,6 +171,7 @@ public class LobbyController : MonoBehaviour
         // Set the text of the Text component to the lobbyName
         lobbyText.GetComponent<TMP_Text>().text = lobbyName;
         lobbyText.transform.localPosition = Vector3.zero;
+        GameObject.Find("NetworkManager").GetComponent<LobbyManager>().SetLobbyData(lobbyName, lobbyId);
     }
 
     public async void JoinLobby()

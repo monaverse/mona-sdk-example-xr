@@ -3324,6 +3324,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3953618502356503693, guid: 2e3a85255a3f3294d88edef5b51b9d0e, type: 3}
+      propertyPath: m_text
+      value: join
+      objectReference: {fileID: 0}
     - target: {fileID: 5237204062942709671, guid: 2e3a85255a3f3294d88edef5b51b9d0e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -3368,6 +3372,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5701754962740505952, guid: 2e3a85255a3f3294d88edef5b51b9d0e, type: 3}
+      propertyPath: m_text
+      value: join
+      objectReference: {fileID: 0}
     - target: {fileID: 6957620386024190296, guid: 2e3a85255a3f3294d88edef5b51b9d0e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3415,6 +3423,10 @@ PrefabInstance:
     - target: {fileID: 7323635608464506273, guid: 2e3a85255a3f3294d88edef5b51b9d0e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292480682070893102, guid: 2e3a85255a3f3294d88edef5b51b9d0e, type: 3}
+      propertyPath: m_text
+      value: join
       objectReference: {fileID: 0}
     - target: {fileID: 8423600632257291863, guid: 2e3a85255a3f3294d88edef5b51b9d0e, type: 3}
       propertyPath: buttonText
@@ -4514,7 +4526,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5237204062942709671, guid: 2e3a85255a3f3294d88edef5b51b9d0e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 240.98999
+      value: 240.98996
       objectReference: {fileID: 0}
     - target: {fileID: 5237204062942709671, guid: 2e3a85255a3f3294d88edef5b51b9d0e, type: 3}
       propertyPath: m_SizeDelta.y
@@ -5966,7 +5978,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5237204062942709671, guid: 2e3a85255a3f3294d88edef5b51b9d0e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 344.03998
+      value: 344.04004
       objectReference: {fileID: 0}
     - target: {fileID: 5237204062942709671, guid: 2e3a85255a3f3294d88edef5b51b9d0e, type: 3}
       propertyPath: m_SizeDelta.y
