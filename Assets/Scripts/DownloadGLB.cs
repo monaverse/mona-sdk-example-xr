@@ -19,38 +19,8 @@ public class DownloadGLB : MonoBehaviour
     public void Init(string urlText)
     {
         url = urlText;
-        fileName = Path.GetFileName(url); // Extract filename from URL
-        // filePath = Path.Combine(Application.temporaryCachePath, fileName);
-
-        string basePath = Path.Combine(Application.dataPath, ".");
-
-        // Create path for DownloadedModels folder
-       // string downloadedModelsPath = Path.Combine(Application.persistentDataPath, "DownloadedModels");
-        // string downloadedModelsPath = Path.Combine(Application.dataPath, "DownloadedModels");
-       // Directory.CreateDirectory(downloadedModelsPath);
-       // Debug.Log("download path: " + downloadedModelsPath);
-
-        //filePath = Path.Combine(downloadedModelsPath, fileName);
-
-        //if (File.Exists(filePath))
-        //{
-         //   Debug.Log("GLB already downloaded: " + filePath);
-            LoadGLB();
-        /*}
-        else
-        {
-            Debug.Log("Downloading GLB: " + url);
-            yield return StartCoroutine(DownloadFile(url, filePath));
-
-            if (File.Exists(filePath))
-            {
-                LoadGLB();
-            }
-            else
-            {
-                Debug.LogError("Failed to download GLB file.");
-            }
-        }*/
+        fileName = Path.GetFileName(url);
+        LoadGLB();
     }
 
     IEnumerator DownloadFile(string url, string filePath)
@@ -71,17 +41,11 @@ public class DownloadGLB : MonoBehaviour
 
     private async void LoadGLB()
     {
-        Debug.Assert(filePath != null);
         Debug.Log("load glb");
-        //string relativeFilePath = "DownloadedModels\\" + fileName;
-        // var downloadedObject = AssetDatabase.LoadAssetAtPath<GameObject>(relativeFilePath);
         gLTF.GLTFUri = url;
         try
         {
-            //if (File.Exists(relativeFilePath))
-            {
-                await gLTF.Load();
-            }
+            await gLTF.Load();
         }
         catch (Exception ex)
         {
@@ -121,19 +85,5 @@ public class DownloadGLB : MonoBehaviour
                 }
             }
         }
-
-            // var loader = new GLTFSceneImporter(filePath, new ImportOptions());
-            // yield return loader.LoadScene(1);
-
-            /*
-            if (downloadedObject != null)
-            {
-                Instantiate(downloadedObject, transform.position, transform.rotation);
-            }
-            else
-            {
-                Debug.LogError("Failed to load downloaded GLB file.");
-            }
-            */
-        }
+    }
 }

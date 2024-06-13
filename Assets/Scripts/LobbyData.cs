@@ -37,12 +37,12 @@ public class LobbyData : ScriptableObject
 
     public void SetLobbyPlayerUri(string uri)
     {
-        lobbyPlayerDropUri = uri;
+        lobbyPlayerUri = uri;
     }
 
     public string GetLobbyPlayerUri()
     {
-        return lobbyPlayerDropUri;
+        return lobbyPlayerUri;
     }
 
     public void SetLobbyPlayerDropUri(string uri)
