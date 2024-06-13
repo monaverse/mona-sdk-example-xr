@@ -1,3 +1,4 @@
+using Mona.SDK.Brains.Core.Utils;
 using System;
 using System.Collections;
 using System.IO;
@@ -9,10 +10,20 @@ using UnityGLTF;
 public class DownloadGLB : MonoBehaviour
 {
     public GLTFComponent gLTF;
+    public BrainsGlbLoader _glb;
 
     private string url;
     private string fileName;
     private string filePath;
+
+    private string GetRandomFolderName()
+    {
+        // Use Path.GetRandomFileName to get a cryptographically strong random string
+        string randomString = Path.GetRandomFileName();
+
+        // Remove the extension (".idj" in this case) as it's not relevant for folders
+        return Path.GetFileNameWithoutExtension(randomString);
+    }
 
     public IEnumerator Init(string urlText)
     {
@@ -23,12 +34,14 @@ public class DownloadGLB : MonoBehaviour
         string basePath = Path.Combine(Application.dataPath, ".");
 
         // Create path for DownloadedModels folder
-        string downloadedModelsPath = Path.Combine(Application.persistentDataPath, "DownloadedModels");
+        string folderName = GetRandomFolderName();
+        string downloadedModelsPath = Path.Combine(Application.persistentDataPath, folderName);
         // string downloadedModelsPath = Path.Combine(Application.dataPath, "DownloadedModels");
         Directory.CreateDirectory(downloadedModelsPath);
         Debug.Log("download path: " + downloadedModelsPath);
 
         filePath = Path.Combine(downloadedModelsPath, fileName);
+        Debug.Log(filePath);
 
         if (File.Exists(filePath))
         {
@@ -71,34 +84,72 @@ public class DownloadGLB : MonoBehaviour
     {
         Debug.Assert(filePath != null);
         Debug.Log("load glb");
+        Debug.Log(filePath);
         string relativeFilePath = "DownloadedModels\\" + fileName;
         // var downloadedObject = AssetDatabase.LoadAssetAtPath<GameObject>(relativeFilePath);
         gLTF.GLTFUri = filePath;
         try
         {
-            if (File.Exists(relativeFilePath))
+            if (File.Exists(filePath))
             {
                 await gLTF.Load();
+            }
+            else
+            {
+                Debug.Log("file does not exist");
             }
         }
         catch (Exception ex)
         {
             Debug.LogError($"{ex.Message}");
             Debug.Log(ex);
+            Debug.Log("glb did not load correctly via gltf component");
+
+            try
+            {
+                _glb.Load(filePath, true, (obj) =>
+                {
+                    Debug.Log($"Loaded {filePath}");
+                    obj.transform.rotation = Quaternion.Euler(0, 180f, 0);
+                    obj.transform.parent = this.transform;
+                }, 1);
+            }
+            catch (Exception ex2)
+            {
+                Debug.LogError($"{ex2.Message}");
+                Debug.Log(ex2);
+                Debug.Log("glb did not load correctly via glb brains from: " + filePath);
+
+                try
+                {
+                    _glb.Load(url, true, (obj) =>
+                    {
+                        Debug.Log($"Loaded {url}");
+                        obj.transform.rotation = Quaternion.Euler(0, 180f, 0);
+                        obj.transform.parent = this.transform;
+                    }, 1);
+                }
+                catch (Exception ex3)
+                {
+                    Debug.LogError($"{ex3.Message}");
+                    Debug.Log(ex3);
+                    Debug.Log("glb did not load correctly via glb brains from: " + url);
+                }
+            }
         }
 
-        // var loader = new GLTFSceneImporter(filePath, new ImportOptions());
-        // yield return loader.LoadScene(1);
+            // var loader = new GLTFSceneImporter(filePath, new ImportOptions());
+            // yield return loader.LoadScene(1);
 
-        /*
-        if (downloadedObject != null)
-        {
-            Instantiate(downloadedObject, transform.position, transform.rotation);
+            /*
+            if (downloadedObject != null)
+            {
+                Instantiate(downloadedObject, transform.position, transform.rotation);
+            }
+            else
+            {
+                Debug.LogError("Failed to load downloaded GLB file.");
+            }
+            */
         }
-        else
-        {
-            Debug.LogError("Failed to load downloaded GLB file.");
-        }
-        */
-    }
 }

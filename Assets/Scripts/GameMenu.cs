@@ -21,8 +21,8 @@ public class GameMenu : MonoBehaviour
 
     private void Start()
     {
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = false;
+        // Cursor.lockState = CursorLockMode.None;
+        // Cursor.visible = false;
     }
 
     private void OnDisable()
