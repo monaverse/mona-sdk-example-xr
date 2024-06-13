@@ -4,59 +4,74 @@ using Monaverse.Core.Utils;
 using Monaverse.Modal;
 using UnityEngine;
 using UnityGLTF;
+using TMPro;
+using Musty;
+using Monaverse.Examples;
 
-namespace Monaverse.Examples
+
+public class MonaverseModalExample : MonoBehaviour
 {
-    public class MonaverseModalExample : MonoBehaviour
+#pragma warning disable CS0436 // Type conflicts with imported type
+    [SerializeField] private MonaCollectibleList _compatibleItems;
+#pragma warning restore CS0436 // Type conflicts with imported type
+    [SerializeField] private MonaCollectibleItemExample _importedItem;
+    [SerializeField] private MonaCollectibleItemExample _importedDrop;
+
+    public GLTFComponent gLTF;
+    public TMP_Text avatarPickedTextMeshPro;
+
+    private LobbyManager lobbyManager;
+
+    private void Start()
     {
-        [SerializeField] private MonaCollectibleListExample _compatibleItems;
-        [SerializeField] private MonaCollectibleItemExample _importedItem;
+        avatarPickedTextMeshPro.gameObject.SetActive(false);
+        MonaverseModal.ImportCollectibleClicked += OnImportCollectibleClicked;
+        MonaverseModal.CollectiblesLoaded += OnCollectiblesLoaded;
 
-        public GLTFComponent gLTF;
+        lobbyManager = GameObject.Find("NetworkManager").GetComponent<LobbyManager>();
+    }
 
-        private void Start()
+    /// <summary>
+    /// Called when a collectibles are loaded in the Monaverse Modal
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="loadedCollectibles">A list of loaded collectibles</param>
+    private async void OnCollectiblesLoaded(object sender, List<CollectibleDto> loadedCollectibles)
+    {
+        Debug.Log("[MonaverseModalExample.OnCollectiblesLoaded] loaded " + loadedCollectibles.Count + " collectibles");
+        await _compatibleItems.SetCollectibles(loadedCollectibles);
+    }
+
+    /// <summary>
+    /// Called when the import button is clicked in a collectible details view
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="collectible">The collectible selected for import</param>
+    private void OnImportCollectibleClicked(object sender, CollectibleDto collectible)
+    {
+        string uri = collectible.Versions[collectible.ActiveVersion].Asset;
+        Debug.Log("[MonaverseModalExample.OnImportCollectibleClicked] " + collectible.Title);
+
+        if (lobbyManager != null && lobbyManager.GetAvatarPicked())
         {
-            MonaverseModal.ImportCollectibleClicked += OnImportCollectibleClicked;
-            MonaverseModal.CollectiblesLoaded += OnCollectiblesLoaded;
+            // Time to get drop item selection
+            _importedDrop.SetCollectible(collectible);
+            lobbyManager.SetPlayerDropLobbyUri(uri);
         }
-
-        /// <summary>
-        /// Called when a collectibles are loaded in the Monaverse Modal
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="loadedCollectibles">A list of loaded collectibles</param>
-        private async void OnCollectiblesLoaded(object sender, List<CollectibleDto> loadedCollectibles)
+        else
         {
-            Debug.Log("[MonaverseModalExample.OnCollectiblesLoaded] loaded " + loadedCollectibles.Count + " collectibles");
-            await _compatibleItems.SetCollectibles(loadedCollectibles);
-        }
-
-        /// <summary>
-        /// Called when the import button is clicked in a collectible details view
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="collectible">The collectible selected for import</param>
-        private async void OnImportCollectibleClicked(object sender, CollectibleDto collectible)
-        {
-            string uri = collectible.Versions[collectible.ActiveVersion].Asset;
-            Debug.Log("[MonaverseModalExample.OnImportCollectibleClicked] " + collectible.Title);
             _importedItem.SetCollectible(collectible);
-            gLTF.GLTFUri = uri;
-            Debug.Log("Getting gltf model from url: " + uri);
-            await gLTF.Load();
-
-            // Find NetworkManager and get the LobbyManager component
-            // and set the player uri
-            GameObject.Find("NetworkManager").GetComponent<LobbyManager>().SetPlayerLobbyUri(uri);
+            lobbyManager.SetPlayerLobbyUri(uri);
+            avatarPickedTextMeshPro.gameObject.SetActive(true);
         }
+    }
         
-        /// <summary>
-        /// This is the entry point for the Monaverse Modal
-        /// Called on button click
-        /// </summary>
-        public void OpenModal()
-        {
-            MonaverseModal.Open();
-        }
+    /// <summary>
+    /// This is the entry point for the Monaverse Modal
+    /// Called on button click
+    /// </summary>
+    public void OpenModal()
+    {
+        MonaverseModal.Open();
     }
 }

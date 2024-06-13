@@ -8,6 +8,8 @@ public class LobbyData : ScriptableObject
     private string lobbyName;
     [SerializeField]
     private string lobbyPlayerUri;
+    [SerializeField]
+    private string lobbyPlayerDropUri;
 
     // Public method to set the lobby ID
     public void SetLobbyId(string id)
@@ -35,11 +37,21 @@ public class LobbyData : ScriptableObject
 
     public void SetLobbyPlayerUri(string uri)
     {
-        lobbyPlayerUri = uri;
+        lobbyPlayerDropUri = uri;
     }
 
     public string GetLobbyPlayerUri()
     {
-        return lobbyPlayerUri;
+        return lobbyPlayerDropUri;
+    }
+
+    public void SetLobbyPlayerDropUri(string uri)
+    {
+        lobbyPlayerDropUri = uri;
+    }
+
+    public string GetLobbyPlayerDropUri()
+    {
+        return lobbyPlayerDropUri;
     }
 }

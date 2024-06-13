@@ -25,11 +25,13 @@ namespace Monaverse.Examples
 
         private void OnClickButton()
         {
+            Debug.Log("tag");
             _onClick?.Invoke();
         }
 
         public void SetCollectible(CollectibleDto collectible, Action onClick = null)
         {
+            Debug.Log("it");
             _onClick = onClick;
             _remoteSprite?.UnsubscribeImage(_image);
             

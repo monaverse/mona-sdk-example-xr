@@ -1,37 +1,57 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class LobbyManager : MonoBehaviour
+namespace Musty
 {
-    private LobbyData lobbyData;
-
-    private void Start()
+    public class LobbyManager : MonoBehaviour
     {
-        // Create a new instance of the LobbyData class
-        lobbyData = ScriptableObject.CreateInstance<LobbyData>();
-    }
+        private LobbyData lobbyData;
+        private bool avatarSelected;
 
-    public void SetLobbyData(string lobbyName, string lobbyId)
-    {
-        // Set the lobby data
-        lobbyData.SetLobbyName(lobbyName);
-        lobbyData.SetLobbyId(lobbyId);
-    }
+        private void Start()
+        {
+            // Create a new instance of the LobbyData class
+            lobbyData = ScriptableObject.CreateInstance<LobbyData>();
 
-    public string GetLobbyDataLobbyId()
-    {
-        // Return the lobby data
-        return lobbyData.GetLobbyId();
-    }
+            avatarSelected = false;
+        }
 
-    public string GetPlayerLobbyUri()
-    {
-        return lobbyData.GetLobbyPlayerUri();
-    }
+        public void SetLobbyData(string lobbyName, string lobbyId)
+        {
+            // Set the lobby data
+            lobbyData.SetLobbyName(lobbyName);
+            lobbyData.SetLobbyId(lobbyId);
+        }
 
-    public void SetPlayerLobbyUri(string lobbyUri)
-    {
-        lobbyData.SetLobbyPlayerUri(lobbyUri);
+        public string GetLobbyDataLobbyId()
+        {
+            // Return the lobby data
+            return lobbyData.GetLobbyId();
+        }
+
+        public string GetPlayerLobbyUri()
+        {
+            return lobbyData.GetLobbyPlayerUri();
+        }
+
+        public void SetPlayerLobbyUri(string lobbyUri)
+        {
+            lobbyData.SetLobbyPlayerUri(lobbyUri);
+            avatarSelected = true;
+        }
+
+        public string GetPlayerDropLobbyUri()
+        {
+            return lobbyData.GetLobbyPlayerDropUri();
+        }
+
+        public void SetPlayerDropLobbyUri(string lobbyUri)
+        {
+            lobbyData.SetLobbyPlayerDropUri(lobbyUri);
+        }
+
+        public bool GetAvatarPicked()
+        {
+            return avatarSelected;
+        }
     }
 }

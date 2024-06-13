@@ -13,9 +13,13 @@ namespace Monaverse.Examples
         [SerializeField] private MonaCollectibleItemExample _itemPrefab;
         [SerializeField] private List<MonaCollectibleItemExample> _itemsPool = new();
         [SerializeField] private MonaCollectibleItemExample _selectedItem;
+        [SerializeField] private MonaCollectibleItemExample _importedDrop;
+
+        private bool _selectedItemLoaded = false;
 
         public async Task SetCollectibles(List<CollectibleDto> collectibles)
         {
+            Debug.Log("called");
             if (collectibles.Count > _itemsPool.Count)
                 await IncreaseCardsPoolSize(collectibles.Count);
 
@@ -25,7 +29,7 @@ namespace Monaverse.Examples
                 var collectible = collectibles[i];
                 monaCollectibleItem.gameObject.SetActive(true);
                 monaCollectibleItem.SetCollectible(collectible,
-                    () => _selectedItem.SetCollectible(collectible));
+                    () => _importedDrop.SetCollectible(collectible));
             }
         }
 
