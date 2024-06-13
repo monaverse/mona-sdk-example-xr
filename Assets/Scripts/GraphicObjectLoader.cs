@@ -16,11 +16,13 @@ public class GraphicObjectLoader : MonoBehaviour
         _downloadGLB = gameObject.GetComponent<DownloadGLB>();
         LobbyManager lobbyManager = GameObject.Find("NetworkManager").GetComponent<LobbyManager>();
         string uri = lobbyManager.GetPlayerLobbyUri();
+        string dropUri = lobbyManager.GetPlayerDropLobbyUri();
 
         if (uri != null && _downloadGLB != null)
         {
             Debug.Log($"{nameof(GraphicObjectLoader)} {uri}");
             _downloadGLB.Init(uri);
+            _downloadGLB.LoadDropGLB(dropUri);
             //StartCoroutine(_downloadGLB.Init(uri));
         }
 

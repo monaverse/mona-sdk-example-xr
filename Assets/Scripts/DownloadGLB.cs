@@ -86,4 +86,24 @@ public class DownloadGLB : MonoBehaviour
             }
         }
     }
+
+    public void LoadDropGLB(string dropItemUri)
+    {
+        try
+        {
+            _glb.Load(dropItemUri, true, (obj) =>
+            {
+                Debug.Log($"Loaded {dropItemUri}");
+                obj.transform.rotation = Quaternion.Euler(0, 180f, 0);
+                obj.transform.parent = this.transform;
+                obj.transform.position = new Vector3 (obj.transform.position.x, obj.transform.position.y, obj.transform.position.z + 5.0f);
+            }, 1);
+        }
+        catch (Exception loadDropGLBException)
+        {
+            Debug.LogError($"{loadDropGLBException.Message}");
+            Debug.Log(loadDropGLBException);
+            Debug.Log("glb did not load correctly via glb brains from: " + dropItemUri);
+        }
+    }
 }
