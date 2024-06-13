@@ -17,9 +17,13 @@ public class MonaCollectibleList : MonoBehaviour
 
     private LobbyManager lobbyManager;
 
+    private void Start()
+    {
+        lobbyManager = GameObject.Find("NetworkManager").GetComponent<LobbyManager>();
+    }
+
     public async Task SetCollectibles(List<CollectibleDto> collectibles)
     {
-        Debug.Log("called");
         if (collectibles.Count > _itemsPool.Count)
             await IncreaseCardsPoolSize(collectibles.Count);
 
