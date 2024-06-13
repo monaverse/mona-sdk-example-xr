@@ -12,13 +12,25 @@ public class EE_ToggleNote : H_DetectCollision
     float playMinTime = 1f;
     float playTime = 0f;
     Vector3 originalScale;
+    Quaternion originalRotation;
+    bool rotBackStart = false;
+    bool isRotating = false;
+    float rotBackTime = 0f;
     void Start()
     {
         originalScale = transform.localScale;
+        originalRotation = transform.localRotation;
     }
 
     void Update(){
-
+        if(!isRotating){
+            if(rotBackTime < 1f){
+                rotBackTime += Time.deltaTime * 1f;
+                transform.localRotation = Quaternion.Lerp(transform.localRotation, originalRotation, rotBackTime);
+            }else{
+                transform.localRotation = originalRotation;
+            }
+        }
     }
 
     protected override void CollisionEvent(){
@@ -41,10 +53,20 @@ public class EE_ToggleNote : H_DetectCollision
     void TurnOn(){
         transform.localScale = originalScale * 1.5f;
         GetComponent<AudioSource>().Play();
+        if(GetComponent<EE_AnimateTo>() != null){
+            GetComponent<EE_AnimateTo>().AnimateToTarget();
+        }
+        isRotating = true;
     }
 
     void TurnOff(){
         transform.localScale = originalScale;
         GetComponent<AudioSource>().Stop();
+        if(GetComponent<EE_AnimateTo>() != null){
+            GetComponent<EE_AnimateTo>().AnimateBackToOriginal();
+        }
+        rotBackStart = true;
+        rotBackTime = 0f;
+        isRotating = false;
     }
 }

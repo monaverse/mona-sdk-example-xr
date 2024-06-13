@@ -20,6 +20,7 @@ public class EE_GetPosition : MonoBehaviour
     }
     public GameObject headset;
     public Vector3 headsetPosition;
+    public GameObject instrumentOrigin;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +33,7 @@ public class EE_GetPosition : MonoBehaviour
         if(headsetPosition == Vector3.zero)
         {
             headsetPosition = headset.transform.position;
+            instrumentOrigin.transform.position = headsetPosition;
         }
     }
 }
