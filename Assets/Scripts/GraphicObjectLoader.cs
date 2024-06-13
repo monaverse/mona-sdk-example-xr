@@ -19,7 +19,9 @@ public class GraphicObjectLoader : MonoBehaviour
 
         if (uri != null && _downloadGLB != null)
         {
-            StartCoroutine(_downloadGLB.Init(uri));
+            Debug.Log($"{nameof(GraphicObjectLoader)} {uri}");
+            _downloadGLB.Init(uri);
+            //StartCoroutine(_downloadGLB.Init(uri));
         }
 
         // gLTF.GLTFUri = uri;

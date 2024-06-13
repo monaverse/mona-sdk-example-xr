@@ -16,16 +16,7 @@ public class DownloadGLB : MonoBehaviour
     private string fileName;
     private string filePath;
 
-    private string GetRandomFolderName()
-    {
-        // Use Path.GetRandomFileName to get a cryptographically strong random string
-        string randomString = Path.GetRandomFileName();
-
-        // Remove the extension (".idj" in this case) as it's not relevant for folders
-        return Path.GetFileNameWithoutExtension(randomString);
-    }
-
-    public IEnumerator Init(string urlText)
+    public void Init(string urlText)
     {
         url = urlText;
         fileName = Path.GetFileName(url); // Extract filename from URL
@@ -34,20 +25,18 @@ public class DownloadGLB : MonoBehaviour
         string basePath = Path.Combine(Application.dataPath, ".");
 
         // Create path for DownloadedModels folder
-        string folderName = GetRandomFolderName();
-        string downloadedModelsPath = Path.Combine(Application.persistentDataPath, folderName);
+       // string downloadedModelsPath = Path.Combine(Application.persistentDataPath, "DownloadedModels");
         // string downloadedModelsPath = Path.Combine(Application.dataPath, "DownloadedModels");
-        Directory.CreateDirectory(downloadedModelsPath);
-        Debug.Log("download path: " + downloadedModelsPath);
+       // Directory.CreateDirectory(downloadedModelsPath);
+       // Debug.Log("download path: " + downloadedModelsPath);
 
-        filePath = Path.Combine(downloadedModelsPath, fileName);
-        Debug.Log(filePath);
+        //filePath = Path.Combine(downloadedModelsPath, fileName);
 
-        if (File.Exists(filePath))
-        {
-            Debug.Log("GLB already downloaded: " + filePath);
+        //if (File.Exists(filePath))
+        //{
+         //   Debug.Log("GLB already downloaded: " + filePath);
             LoadGLB();
-        }
+        /*}
         else
         {
             Debug.Log("Downloading GLB: " + url);
@@ -61,7 +50,7 @@ public class DownloadGLB : MonoBehaviour
             {
                 Debug.LogError("Failed to download GLB file.");
             }
-        }
+        }*/
     }
 
     IEnumerator DownloadFile(string url, string filePath)
@@ -84,13 +73,12 @@ public class DownloadGLB : MonoBehaviour
     {
         Debug.Assert(filePath != null);
         Debug.Log("load glb");
-        Debug.Log(filePath);
-        string relativeFilePath = "DownloadedModels\\" + fileName;
+        //string relativeFilePath = "DownloadedModels\\" + fileName;
         // var downloadedObject = AssetDatabase.LoadAssetAtPath<GameObject>(relativeFilePath);
-        gLTF.GLTFUri = filePath;
+        gLTF.GLTFUri = url;
         try
         {
-            if (File.Exists(filePath))
+            //if (File.Exists(relativeFilePath))
             {
                 await gLTF.Load();
             }
@@ -101,7 +89,7 @@ public class DownloadGLB : MonoBehaviour
         }
         catch (Exception ex)
         {
-            Debug.LogError($"{ex.Message}");
+            Debug.LogError($"{ex.Message} {ex.StackTrace}");
             Debug.Log(ex);
             Debug.Log("glb did not load correctly via gltf component");
 
