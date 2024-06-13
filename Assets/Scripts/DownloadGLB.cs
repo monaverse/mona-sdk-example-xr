@@ -82,10 +82,6 @@ public class DownloadGLB : MonoBehaviour
             {
                 await gLTF.Load();
             }
-            else
-            {
-                Debug.Log("file does not exist");
-            }
         }
         catch (Exception ex)
         {
