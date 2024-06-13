@@ -31,5 +31,11 @@ public class H_DetectCollision : MonoBehaviour
             collisionExitEvent?.Invoke();
             collidingObject = null;
         }
+
+        CollisionExitEvent();
+    }
+
+    protected virtual void CollisionExitEvent(){
+        Debug.Log("Collision Exit Event");
     }
 }
