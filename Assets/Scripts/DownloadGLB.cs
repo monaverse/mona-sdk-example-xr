@@ -23,7 +23,10 @@ public class DownloadGLB : MonoBehaviour
         string basePath = Path.Combine(Application.dataPath, ".");
 
         // Create path for DownloadedModels folder
-        string downloadedModelsPath = Path.Combine(Application.dataPath, "DownloadedModels");
+        string downloadedModelsPath = Path.Combine(Application.persistentDataPath, "DownloadedModels");
+        // string downloadedModelsPath = Path.Combine(Application.dataPath, "DownloadedModels");
+        Directory.CreateDirectory(downloadedModelsPath);
+        Debug.Log("download path: " + downloadedModelsPath);
 
         filePath = Path.Combine(downloadedModelsPath, fileName);
 
@@ -71,7 +74,18 @@ public class DownloadGLB : MonoBehaviour
         string relativeFilePath = "DownloadedModels\\" + fileName;
         // var downloadedObject = AssetDatabase.LoadAssetAtPath<GameObject>(relativeFilePath);
         gLTF.GLTFUri = filePath;
-        await gLTF.Load();
+        try
+        {
+            if (File.Exists(relativeFilePath))
+            {
+                await gLTF.Load();
+            }
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError($"{ex.Message}");
+            Debug.Log(ex);
+        }
 
         // var loader = new GLTFSceneImporter(filePath, new ImportOptions());
         // yield return loader.LoadScene(1);
