@@ -9,7 +9,8 @@ public class EE_PlayNote : H_DetectCollision
     //AUDIO
     public AudioSource audioSource;
     private float lastCollisionTime = 0f;
-    private float collisionThreshold = 0.75f;
+    private float collisionThreshold = 0.2f;
+    public bool interruptPlaying = false;
 
     void Start(){
         audioSource = GetComponent<AudioSource>();
@@ -27,9 +28,17 @@ public class EE_PlayNote : H_DetectCollision
 
         lastCollisionTime = Time.time;
 
-        if(!audioSource.isPlaying){
-            audioSource.Play();
+        if(interruptPlaying){
+            PlayNote();
+        }else{
+            if(!audioSource.isPlaying){
+                PlayNote();
+            }
         }
+    }
+
+    void PlayNote(){
+        audioSource.Play();
         if(GetComponent<EE_AnimateBounce>() != null){
             GetComponent<EE_AnimateBounce>().AnimateVisual();
         }

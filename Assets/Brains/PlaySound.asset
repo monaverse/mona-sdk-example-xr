@@ -79,7 +79,7 @@ MonoBehaviour:
         _category: Proximity
         _muted: 0
         _tag: OculusHand
-        _distance: 5
+        _distance: 1
         _distanceValueName: 
         _fieldOfView: 180
         _fieldOfViewValueName: 
