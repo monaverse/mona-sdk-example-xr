@@ -286,6 +286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gLTF: {fileID: 1877518127223863203}
   _glb: {fileID: 2844460174816558162}
+  _netUrls: {fileID: 1573575502243639284}
 --- !u!1 &3411177989087503877
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,6 +763,7 @@ GameObject:
   - component: {fileID: 8258852520862518616}
   - component: {fileID: 3668010654491762719}
   - component: {fileID: 5465547081831484878}
+  - component: {fileID: 1573575502243639284}
   m_Layer: 0
   m_Name: NetworkPlayerDino
   m_TagString: Player
@@ -971,6 +973,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26fe924fb5d8c664cbf895be076ee1af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1573575502243639284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4391688209819011581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6dacff722d96904dad9940131eda6bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4556617967724998307

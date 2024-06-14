@@ -11,6 +11,7 @@ public class DownloadGLB : MonoBehaviour
 {
     public GLTFComponent gLTF;
     public BrainsGlbLoader _glb;
+    public NetworkedUrls _netUrls;
 
     private string url;
     private string fileName;
@@ -18,6 +19,7 @@ public class DownloadGLB : MonoBehaviour
 
     public void Init(string urlText)
     {
+        _netUrls.OnUrlUpdated += OnUrlChange;
         url = urlText;
         fileName = Path.GetFileName(url);
         LoadGLB();
@@ -36,6 +38,21 @@ public class DownloadGLB : MonoBehaviour
             }
 
             File.WriteAllBytes(filePath, webRequest.downloadHandler.data);
+        }
+    }
+
+    private void OnUrlChange(UrlChangedEventArgs e)
+    {
+        Debug.Log("URL changed to: " + e.NewUrl.ToString());
+        
+        if (e.NewUrl.ToString() != url)
+        {
+            Debug.Log("New url, please load the new GLB.");
+            LoadExtraGLB(e.NewUrl.ToString());
+        }
+        else
+        {
+            Debug.Log("Same url.");
         }
     }
 
@@ -85,6 +102,10 @@ public class DownloadGLB : MonoBehaviour
                 }
             }
         }
+
+        Debug.Log("before change url");
+        // _netUrls.GreyUpdate(url);
+        Debug.Log("after change url");
     }
 
     public void LoadDropGLB(string dropItemUri)
@@ -104,6 +125,23 @@ public class DownloadGLB : MonoBehaviour
             Debug.LogError($"{loadDropGLBException.Message}");
             Debug.Log(loadDropGLBException);
             Debug.Log("glb did not load correctly via glb brains from: " + dropItemUri);
+        }
+    }
+
+    public void LoadExtraGLB(string extraUri)
+    {
+        try
+        {
+            _glb.Load(extraUri, true, (obj) =>
+            {
+                Debug.Log($"Loaded {extraUri}");
+            }, 1);
+        }
+        catch (Exception loadExtraGLBException)
+        {
+            Debug.LogError($"{loadExtraGLBException.Message}");
+            Debug.Log(loadExtraGLBException);
+            Debug.Log("glb did not load extra correctly via glb brains from: " + extraUri);
         }
     }
 }

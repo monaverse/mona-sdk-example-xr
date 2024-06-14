@@ -6,6 +6,7 @@ using System;
 using Unity.Services.Lobbies.Models;
 using System.Linq;
 using Unity.VisualScripting;
+using Unity.Collections;
 
 public enum GameState
 {
@@ -29,6 +30,8 @@ public class NetworkGameManager : NetworkBehaviour
     [SerializeField]
     private ClientUIController clientUI;
     public static NetworkGameManager Instance { get; private set; }
+
+    private NetworkVariable<FixedString512Bytes> url = new NetworkVariable<FixedString512Bytes>();
 
     private const int MAX_PLAYERS = 4;
     private const int MAX_SCORE = 20;
@@ -128,6 +131,12 @@ public class NetworkGameManager : NetworkBehaviour
                 networkGameObject.Despawn(true);
             }
         }
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    public void ChangeUrlServerRpc(FixedString512Bytes newUrl, ulong id)
+    {
+        Debug.Log("ChangeUrlServerRpc: " + newUrl + " from " + id);
     }
 
     public void UpdatePlayerScore(ulong playerId)
