@@ -10,196 +10,161 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec73015eeda9a7746a62d47a48b18696, type: 3}
-  m_Name: PlaySound
+  m_Name: PlayDrum1
   m_EditorClassIdentifier: 
-  _name: PlaySound
+  _name: PlayDrum1
   _propertyType: 0
   _loggingEnabled: 0
   _legacyMonaPlatforms: 0
   _sourceUrl: 
   _defaultVariables:
-    rid: 9027087515113750800
+    rid: 9027087556604330085
   _priority: 0
   _corePage:
-    rid: 9027087515113750801
+    rid: 9027087556604330086
   _statePages: []
   _began: 0
   _monaTags:
   - Default
   _monaAssets:
-  - rid: 9027087556604330039
+  - rid: 9027087556604330215
   _monaTagSource: {fileID: 11400000, guid: 2d86cb8c0bedf384c84e61a74d7b265b, type: 2}
   _tileSet: {fileID: 11400000, guid: 97227b7a45df9364ebab91259570e7ed, type: 2}
   references:
     version: 2
     RefIds:
-    - rid: 9027087515113750800
+    - rid: 9027087556604330085
       type: {class: MonaBrainVariables, ns: Mona.SDK.Brains.Core.State, asm: com.monaverse.sdk.brains.runtime}
       data:
         _values: []
-    - rid: 9027087515113750801
+    - rid: 9027087556604330086
       type: {class: MonaBrainPage, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
       data:
         _instructions:
-        - rid: 9027087515113750802
-        - rid: 9027087556604329984
+        - rid: 9027087556604330087
+        - rid: 9027087556604330362
         _name: Core
         _isCore: 1
         _isActive: 0
-    - rid: 9027087515113750802
+    - rid: 9027087556604330087
       type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
       data:
         _instructionTiles:
-        - rid: 9027087515113750806
-        - rid: 9027087556604330055
+        - rid: 9027087556604330287
+        - rid: 9027087556604330260
+        - rid: 9027087556604330393
         _result: 1
         _muted: 0
-    - rid: 9027087515113750806
-      type: {class: OnNearInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions, asm: com.monaverse.sdk.brains.runtime}
-      data:
-        _id: OnNear
-        _name: When Near
-        _category: Proximity
-        _muted: 0
-        _tag: OculusHand
-        _distance: 0.4
-        _distanceValueName: 
-        _fieldOfView: 180
-        _fieldOfViewValueName: 
-    - rid: 9027087556604329984
-      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
-      data:
-        _instructionTiles:
-        - rid: 9027087556604329985
-        - rid: 9027087556604329986
-        _result: 1
-        _muted: 0
-    - rid: 9027087556604329985
-      type: {class: OnNearInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions, asm: com.monaverse.sdk.brains.runtime}
-      data:
-        _id: OnNear
-        _name: When Near
-        _category: Proximity
-        _muted: 0
-        _tag: OculusHand
-        _distance: 0.4
-        _distanceValueName: 
-        _fieldOfView: 180
-        _fieldOfViewValueName: 
-    - rid: 9027087556604329986
-      type: {class: LogInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.General, asm: com.monaverse.sdk.brains.runtime}
-      data:
-        _id: Log
-        _name: Log
-        _category: Adv Coding
-        _muted: 0
-        _message: '!!!'
-        _messageValueName: 
-        _prefix: TOUCHHING
-    - rid: 9027087556604330039
+    - rid: 9027087556604330215
       type: {class: MonaAudioAssets, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
       data:
         _name: samples
         _monaAssets:
-        - rid: 9027087556604330040
-        - rid: 9027087556604330041
-        - rid: 9027087556604330042
-        - rid: 9027087556604330043
-        - rid: 9027087556604330044
-        - rid: 9027087556604330045
-        - rid: 9027087556604330046
-        - rid: 9027087556604330047
-        - rid: 9027087556604330048
-        - rid: 9027087556604330049
-        - rid: 9027087556604330050
-        - rid: 9027087556604330051
-        - rid: 9027087556604330052
-        - rid: 9027087556604330053
-        - rid: 9027087556604330054
+        - rid: 9027087556604330216
+        - rid: 9027087556604330217
+        - rid: 9027087556604330218
+        - rid: 9027087556604330219
+        - rid: 9027087556604330220
+        - rid: 9027087556604330221
+        - rid: 9027087556604330222
+        - rid: 9027087556604330223
+        - rid: 9027087556604330224
+        - rid: 9027087556604330225
+        - rid: 9027087556604330226
+        - rid: 9027087556604330227
+        - rid: 9027087556604330228
+        - rid: 9027087556604330229
+        - rid: 9027087556604330230
+        - rid: 9027087556604330231
         _monaBodyPrefabs: []
-    - rid: 9027087556604330040
+    - rid: 9027087556604330216
       type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
       data:
         _prefabId: perc1
         _audioClip: {fileID: 8300000, guid: d604adbe043b8234fa33157bd87803ca, type: 3}
-    - rid: 9027087556604330041
+    - rid: 9027087556604330217
       type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
       data:
         _prefabId: perc2
         _audioClip: {fileID: 8300000, guid: 1fe5b4f98ef9b004cacb55aea884e057, type: 3}
-    - rid: 9027087556604330042
+    - rid: 9027087556604330218
       type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
       data:
         _prefabId: perc3
         _audioClip: {fileID: 8300000, guid: 456497e769e779542bd1de20c1ad94d9, type: 3}
-    - rid: 9027087556604330043
+    - rid: 9027087556604330219
       type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
       data:
         _prefabId: perc4
         _audioClip: {fileID: 8300000, guid: 0c71d46dff3ac8840b2f8a18cc1ab747, type: 3}
-    - rid: 9027087556604330044
+    - rid: 9027087556604330220
       type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
       data:
         _prefabId: perc5
         _audioClip: {fileID: 8300000, guid: a63eb2972a42c174aaa1052b5375a71c, type: 3}
-    - rid: 9027087556604330045
+    - rid: 9027087556604330221
       type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
       data:
         _prefabId: perc6
         _audioClip: {fileID: 8300000, guid: 9bfde78045f381548b319e13b224dbe3, type: 3}
-    - rid: 9027087556604330046
+    - rid: 9027087556604330222
       type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
       data:
         _prefabId: perc7
         _audioClip: {fileID: 8300000, guid: 5a1cf69fe3753344aa781fb0beebc961, type: 3}
-    - rid: 9027087556604330047
+    - rid: 9027087556604330223
       type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
       data:
         _prefabId: perc8
         _audioClip: {fileID: 8300000, guid: dd798091ba7993f429fbbc3cab438586, type: 3}
-    - rid: 9027087556604330048
+    - rid: 9027087556604330224
       type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
       data:
         _prefabId: perc9
         _audioClip: {fileID: 8300000, guid: dc6309a555f3a924da6af87efd02e58d, type: 3}
-    - rid: 9027087556604330049
+    - rid: 9027087556604330225
       type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
       data:
         _prefabId: perc10
         _audioClip: {fileID: 8300000, guid: 154ad3fa3dab9164fb13b6944b642cd1, type: 3}
-    - rid: 9027087556604330050
+    - rid: 9027087556604330226
       type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
       data:
         _prefabId: perc11
         _audioClip: {fileID: 8300000, guid: 4ff2c94681e7d5240baa010c8df27544, type: 3}
-    - rid: 9027087556604330051
+    - rid: 9027087556604330227
       type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
       data:
         _prefabId: perc12
         _audioClip: {fileID: 8300000, guid: 3d8b746acef490b4c80ed9ee60c0d724, type: 3}
-    - rid: 9027087556604330052
+    - rid: 9027087556604330228
       type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
       data:
         _prefabId: pad1
         _audioClip: {fileID: 8300000, guid: 38d5b4c8c2b1f504db18459958716795, type: 3}
-    - rid: 9027087556604330053
+    - rid: 9027087556604330229
       type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
       data:
         _prefabId: pad2
         _audioClip: {fileID: 8300000, guid: f6009e6744640c3478519c10b6db7685, type: 3}
-    - rid: 9027087556604330054
+    - rid: 9027087556604330230
       type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
       data:
         _prefabId: pad3
         _audioClip: {fileID: 8300000, guid: 2149e28417a284e4fb6b25e8fade1bec, type: 3}
-    - rid: 9027087556604330055
+    - rid: 9027087556604330231
+      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _prefabId: perc11-1
+        _audioClip: {fileID: 8300000, guid: 37aa798d414e2ee4f986bf76c7760aa2, type: 3}
+    - rid: 9027087556604330260
       type: {class: PlayAudioInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Audio, asm: com.monaverse.sdk.brains.runtime}
       data:
         _id: PlayAudio
         _name: Play Audio
         _category: Audio
         _muted: 0
-        _monaAsset: pad1
+        _monaAsset: perc12
         _volume: 1
         _volumeName: 
         _pitch: 1
@@ -210,3 +175,50 @@ MonoBehaviour:
         _loopAudioName: 
         _wait: 0
         _waitName: 
+    - rid: 9027087556604330287
+      type: {class: OnHitInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnHit
+        _name: On Touch
+        _category: Proximity
+        _muted: 0
+        _tag: OculusHand
+    - rid: 9027087556604330362
+      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructionTiles:
+        - rid: 9027087556604330363
+        - rid: 9027087556604330364
+        _result: 1
+        _muted: 0
+    - rid: 9027087556604330363
+      type: {class: OnHitInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnHit
+        _name: On Touch
+        _category: Proximity
+        _muted: 0
+        _tag: OculusHand
+    - rid: 9027087556604330364
+      type: {class: TeleportToScaleInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Physics, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: TeleportToScaleInstructionTile
+        _name: Pop Scale To
+        _category: Scale
+        _muted: 0
+        _value: {x: 0.3, y: 0.3, z: 0.3}
+        _valueValueName:
+        - 
+        - 
+        - 
+        - 
+    - rid: 9027087556604330393
+      type: {class: LogInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.General, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: Log
+        _name: Log
+        _category: Adv Coding
+        _muted: 0
+        _message: 
+        _messageValueName: 
+        _prefix: TOUCH1
