@@ -60,7 +60,7 @@ public class ConnectionApprovalHandler : MonoBehaviour
         m_SpawnPointIndex += 1;
 
         // Rotation to spawn the player object (if null it uses the default of Quaternion.identity)
-        response.Rotation = Quaternion.identity;
+        response.Rotation = Quaternion.Euler(0, -90, 0);
 
         // If response.Approved is false, you can provide a message that explains the reason why via ConnectionApprovalResponse.Reason
         // On the client-side, NetworkManager.DisconnectReason will be populated with this message via DisconnectReasonMessage
