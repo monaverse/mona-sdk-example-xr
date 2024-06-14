@@ -55,4 +55,9 @@ public class CannonController : NetworkBehaviour
             cannonballInstance.GetComponent<Rigidbody>().AddForce(fireDirection * initialSpeed, ForceMode.VelocityChange);
         }
     }
+
+    public void SetFireInterval(float interval)
+    {
+        fireInterval = interval;
+    }
 }
