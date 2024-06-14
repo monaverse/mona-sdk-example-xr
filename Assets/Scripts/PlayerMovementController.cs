@@ -8,22 +8,31 @@ public class PlayerMovementController : NetworkBehaviour
     [SerializeField]
     private float flySpeed = 10f; // Speed for flying
     [SerializeField]
+    private float forwardSpeed = 5f; // Speed for automatic forward movement
+    [SerializeField]
     private float initialHeight = 7f; // Initial height for the player
     [SerializeField]
     private CinemachineFreeLook virtualCamera;
 
     private Animator animator;
     private CharacterController controller;
+    private PlayerInput controls;
+    private InputAction moveAction;
 
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("Playeers forward: " + transform.forward);
         // Set the player's initial height
         transform.position = new Vector3(transform.position.x, initialHeight, transform.position.z);
 
         // Get the animator component if it exists
         animator = GetComponent<Animator>();
         controller = GetComponent<CharacterController>();
+
+        // Initialize player input
+        controls = GetComponent<PlayerInput>();
+        moveAction = controls.actions.FindAction("Move");
     }
 
     // Update is called once per frame
@@ -34,16 +43,16 @@ public class PlayerMovementController : NetworkBehaviour
             return;
         }
 
-        // Automatically move the player forward in a specified direction (e.g., forward relative to the player)
-        Vector3 moveDirection = transform.forward;
-        float currentSpeed = flySpeed;
+        // Read input values for horizontal movement
+        Vector2 moveInput = moveAction.ReadValue<Vector2>();
 
-        // Create the velocity vector for flying (including vertical movement)
-        Vector3 velocity = moveDirection * currentSpeed;
+        // Calculate movement direction (left/right) and add automatic forward movement
+        Vector3 moveDirection = new Vector3(-forwardSpeed, 0, moveInput.x);
+        Vector3 velocity = moveDirection * flySpeed;
 
         if (animator != null)
         {
-            HandleAnimation(true); // Pass 'true' to indicate movement
+            HandleAnimation(moveInput.x != 0 || forwardSpeed != 0);
         }
 
         Move(velocity);
@@ -64,9 +73,12 @@ public class PlayerMovementController : NetworkBehaviour
 
     private void Move(Vector3 moveVector)
     {
-        // Move the player upwards slightly to simulate flying
-        moveVector.y += flySpeed * Time.deltaTime;
+        // Ensure the player stays at the initial height
+        moveVector.y = 0;
+        // Move the player
         controller.Move(moveVector * Time.deltaTime);
+        // Keep the player at the initial height
+        transform.position = new Vector3(transform.position.x, initialHeight, transform.position.z);
     }
 
     public override void OnNetworkSpawn()

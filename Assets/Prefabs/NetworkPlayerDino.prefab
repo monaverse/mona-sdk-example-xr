@@ -872,8 +872,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 442625ab0ca92b94a805c580d1f1bdc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flySpeed: 30
-  initialHeight: 20
+  flySpeed: 9
+  forwardSpeed: 5
+  initialHeight: 8
   virtualCamera: {fileID: 2064631892857949622}
 --- !u!114 &8272412237986372335
 MonoBehaviour:
@@ -1736,9 +1737,9 @@ MonoBehaviour:
   m_XAxis:
     Value: 0
     m_SpeedMode: 0
-    m_MaxSpeed: 100
-    m_AccelTime: 0.1
-    m_DecelTime: 0.1
+    m_MaxSpeed: 0
+    m_AccelTime: 0
+    m_DecelTime: 0
     m_InputAxisName: Mouse X
     m_InputAxisValue: 0
     m_InvertInput: 0

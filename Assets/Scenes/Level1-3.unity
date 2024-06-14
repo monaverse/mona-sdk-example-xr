@@ -13847,13 +13847,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinPrefab: {fileID: 6619320743894098469, guid: 729862c877a47334f8c963328e3b6051, type: 3}
-  startCoins: 3
-  maxCoins: 5
-  coinPositionXMin: -8
-  coinPositionXMax: 8
+  startCoins: 40
+  maxCoins: 60
+  coinPositionXMin: -68.3
+  coinPositionXMax: -568.9
   coinPositionZMin: -9
   coinPositionZMax: 20
-  coinPositionY: 1.2
+  coinPositionY: 8
   creationInterval: 4
 --- !u!114 &721199906
 MonoBehaviour:
@@ -13862,7 +13862,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 721199902}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13f364ad191df92499cf897ad1cbd4ac, type: 3}
   m_Name: 
@@ -13903,7 +13903,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cannonPrefab: {fileID: 2803542769015242713, guid: 5b08743478d6a8d44a458637050ce411, type: 3}
   cannonsLantern: {fileID: 832719858}
-  maxCannons: 60
+  maxCannons: 100
   cannonPositionXMin: -68.3
   cannonPositionXMax: -568.9
   cannonPositionZMin: -9.83
@@ -18803,7 +18803,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

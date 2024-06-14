@@ -23,7 +23,7 @@ public class NetworkCannonSpawner : NetworkBehaviour
 
     private void Update()
     {
-        if (NetworkGameManager.Instance != null)
+        if (NetworkManager.IsListening)
         {
             if (IsServer && IsHost)
             {
