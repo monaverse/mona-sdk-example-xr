@@ -328,7 +328,7 @@ MonoBehaviour:
         _scale: {x: 0.4, y: 0.4, z: 0.4}
         _scaleValueName: []
         _mode: 1
-        _value: 1
+        _value: 0.2
         _valueValueName: 
         _easing: 1
         _onlyTurnWhenMoving: 0
@@ -343,7 +343,7 @@ MonoBehaviour:
         _scale: {x: 0.3, y: 0.3, z: 0.3}
         _scaleValueName: []
         _mode: 1
-        _value: 1
+        _value: 0.2
         _valueValueName: 
         _easing: 1
         _onlyTurnWhenMoving: 0
