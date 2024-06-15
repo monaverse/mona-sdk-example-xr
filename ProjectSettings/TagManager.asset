@@ -8,6 +8,7 @@ TagManager:
   - Coin
   - SpawnPoint
   - Cannon
+  - Cannonball
   layers:
   - Default
   - TransparentFX

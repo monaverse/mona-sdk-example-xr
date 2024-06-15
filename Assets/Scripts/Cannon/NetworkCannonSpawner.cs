@@ -44,7 +44,7 @@ public class NetworkCannonSpawner : NetworkBehaviour
                 GameObject newCannon = Instantiate(cannonPrefab, new Vector3(Random.Range(cannonPositionXMin, cannonPositionXMax), cannonPositionY, Random.Range(cannonPositionZMin, cannonPositionZMax)), Quaternion.identity);
                 newCannon.GetComponent<NetworkObject>().Spawn(true);
                 newCannon.transform.parent = cannonsLantern.transform;
-                newCannon.GetComponent<CannonController>().SetFireInterval(Random.Range(5, 10));
+                newCannon.GetComponent<CannonController>().SetFireInterval(Random.Range(1, 5));
             }
         }
     }

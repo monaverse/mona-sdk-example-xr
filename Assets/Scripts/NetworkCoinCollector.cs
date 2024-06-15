@@ -11,7 +11,7 @@ public class NetworkCoinCollector : NetworkBehaviour
             NetworkGameManager.Instance.UpdatePlayerScore(this.gameObject.GetComponent<NetworkObject>().NetworkObjectId);
         }
 
-        if (other.gameObject.CompareTag("Cannon"))
+        if (other.gameObject.CompareTag("Cannonball"))
         {
             Debug.Log("Hit");
         }
