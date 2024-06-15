@@ -6,16 +6,43 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityGLTF;
+using UnityEngine.InputSystem;
 
 public class DownloadGLB : MonoBehaviour
 {
     public GLTFComponent gLTF;
     public BrainsGlbLoader _glb;
     public NetworkedUrls _netUrls;
+    public Transform dropLocation;
+    public GameObject dropItem;
 
     private string url;
     private string fileName;
     private string filePath;
+
+    public void DropTheGoods()
+    {
+        Debug.Log("Drop the goods");
+        if (dropItem != null)
+        {
+            // Make a copy of dropItem, attach a rigidbody, and have the item fall
+            // Create a copy of the existing dropItem at the dropPoint's position and rotation
+            GameObject droppedItem = Instantiate(dropItem, dropLocation.position, dropLocation.rotation);
+
+            // Ensure the instantiated object has a Rigidbody, add one if it doesn't
+            Rigidbody rb = droppedItem.GetComponent<Rigidbody>();
+            if (rb == null)
+            {
+                rb = droppedItem.AddComponent<Rigidbody>();
+            }
+
+            // Optional: Apply an initial force to the Rigidbody to simulate falling or throwing
+            rb.AddForce(Vector3.down * 10f, ForceMode.Impulse); // Adjust the force value as needed
+
+            // Destroy the dropped item after 5 seconds
+            Destroy(droppedItem, 5f);
+        }
+    }
 
     public void Init(string urlText)
     {
@@ -115,9 +142,10 @@ public class DownloadGLB : MonoBehaviour
             _glb.Load(dropItemUri, true, (obj) =>
             {
                 Debug.Log($"Loaded {dropItemUri}");
-                obj.transform.rotation = Quaternion.Euler(0, 180f, 0);
-                obj.transform.parent = this.transform;
-                obj.transform.position = new Vector3 (obj.transform.position.x, obj.transform.position.y, obj.transform.position.z + 5.0f);
+                obj.transform.rotation = Quaternion.identity;
+                obj.transform.parent = dropLocation;
+                obj.transform.position = new Vector3(dropLocation.position.x - 2.0f, dropLocation.position.y, dropLocation.position.z);
+                dropItem = obj;
             }, 1);
         }
         catch (Exception loadDropGLBException)

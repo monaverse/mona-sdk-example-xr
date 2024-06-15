@@ -18,6 +18,7 @@ public class PlayerMovementController : NetworkBehaviour
     private CharacterController controller;
     private PlayerInput controls;
     private InputAction moveAction;
+    private InputAction dropAction;
 
     // Start is called before the first frame update
     void Start()
@@ -90,6 +91,26 @@ public class PlayerMovementController : NetworkBehaviour
             virtualCamera.Priority = 10;
             gameObject.GetComponent<PlayerInput>().enabled = true;
             gameObject.GetComponent<PlayerInput>().ActivateInput();
+
+            DownloadGLB downloadGLB = this.GetComponentInChildren<DownloadGLB>();
+
+            if (downloadGLB != null)
+            {
+                Debug.Log("downloadGLB available");
+                // Do something with the downloadGLB component
+                dropAction = new InputAction(binding: "<Gamepad>/buttonSouth");
+                dropAction.performed += _ =>
+                {
+                    Debug.Log("Drop action performed");
+                    downloadGLB.DropTheGoods();
+                };
+                dropAction.Enable();
+                Debug.Log("downloadGLB drop action enabled");
+            }
+            else
+            {
+                Debug.Log("downloadGLB still null");
+            }
         }
         else
         {
