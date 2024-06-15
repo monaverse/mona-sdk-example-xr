@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EE_AnimateTo : MonoBehaviour
+public class EE_AnimateTo : H_DetectCollision
 {
 public Vector3 targetSize;
 public float animateToTargetTime;
@@ -12,6 +12,8 @@ private Vector3 originalSize;
 private float timeSinceStarted;
 private bool isAnimatingToTarget;
 private bool isAnimatingToOriginal;
+
+private bool toggled;
 
 // Start is called before the first frame update
 void Start()
@@ -48,6 +50,15 @@ void Update()
             isAnimatingToOriginal = false;
             timeSinceStarted = 0f;
         }
+    }
+}
+
+protected override void CollisionEvent(){
+    toggled = !toggled;
+    if(toggled){
+        AnimateToTarget();
+    }else{
+        AnimateBackToOriginal();
     }
 }
 

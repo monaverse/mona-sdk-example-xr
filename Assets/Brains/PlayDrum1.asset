@@ -42,7 +42,6 @@ MonoBehaviour:
       data:
         _instructions:
         - rid: 9027087556604330087
-        - rid: 9027087556604330362
         _name: Core
         _isCore: 1
         _isActive: 0
@@ -50,9 +49,9 @@ MonoBehaviour:
       type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
       data:
         _instructionTiles:
-        - rid: 9027087556604330287
-        - rid: 9027087556604330260
+        - rid: 9027087562172006612
         - rid: 9027087556604330393
+        - rid: 9027087562172006616
         _result: 1
         _muted: 0
     - rid: 9027087556604330215
@@ -157,61 +156,6 @@ MonoBehaviour:
       data:
         _prefabId: perc11-1
         _audioClip: {fileID: 8300000, guid: 37aa798d414e2ee4f986bf76c7760aa2, type: 3}
-    - rid: 9027087556604330260
-      type: {class: PlayAudioInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Audio, asm: com.monaverse.sdk.brains.runtime}
-      data:
-        _id: PlayAudio
-        _name: Play Audio
-        _category: Audio
-        _muted: 0
-        _monaAsset: perc12
-        _volume: 1
-        _volumeName: 
-        _pitch: 1
-        _pitchName: 
-        _allowInterruption: 1
-        _allowInterruptionName: 
-        _loopAudio: 0
-        _loopAudioName: 
-        _wait: 0
-        _waitName: 
-    - rid: 9027087556604330287
-      type: {class: OnHitInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions, asm: com.monaverse.sdk.brains.runtime}
-      data:
-        _id: OnHit
-        _name: On Touch
-        _category: Proximity
-        _muted: 0
-        _tag: OculusHand
-    - rid: 9027087556604330362
-      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
-      data:
-        _instructionTiles:
-        - rid: 9027087556604330363
-        - rid: 9027087556604330364
-        _result: 1
-        _muted: 0
-    - rid: 9027087556604330363
-      type: {class: OnHitInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions, asm: com.monaverse.sdk.brains.runtime}
-      data:
-        _id: OnHit
-        _name: On Touch
-        _category: Proximity
-        _muted: 0
-        _tag: OculusHand
-    - rid: 9027087556604330364
-      type: {class: TeleportToScaleInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Physics, asm: com.monaverse.sdk.brains.runtime}
-      data:
-        _id: TeleportToScaleInstructionTile
-        _name: Pop Scale To
-        _category: Scale
-        _muted: 0
-        _value: {x: 0.3, y: 0.3, z: 0.3}
-        _valueValueName:
-        - 
-        - 
-        - 
-        - 
     - rid: 9027087556604330393
       type: {class: LogInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.General, asm: com.monaverse.sdk.brains.runtime}
       data:
@@ -222,3 +166,29 @@ MonoBehaviour:
         _message: 
         _messageValueName: 
         _prefix: TOUCH1
+    - rid: 9027087562172006612
+      type: {class: OnHitInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnHit
+        _name: On Touch
+        _category: Proximity
+        _muted: 0
+        _tag: OculusHand
+    - rid: 9027087562172006616
+      type: {class: PlayAudioInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Audio, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: PlayAudio
+        _name: Play Audio
+        _category: Audio
+        _muted: 0
+        _monaAsset: perc11-1
+        _volume: 1
+        _volumeName: 
+        _pitch: 1
+        _pitchName: 
+        _allowInterruption: 1
+        _allowInterruptionName: 
+        _loopAudio: 0
+        _loopAudioName: 
+        _wait: 0
+        _waitName: 

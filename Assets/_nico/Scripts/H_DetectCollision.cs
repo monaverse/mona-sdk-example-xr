@@ -14,10 +14,10 @@ public class H_DetectCollision : MonoBehaviour
         if(collision.gameObject.name.Contains(targetStringContains)){
             collidingObject = collision.gameObject;
             collisionEnterEvent?.Invoke();
+            //call the CollisionEvent that can be overriden by children scripts
+            CollisionEvent();
         }
 
-        //call the CollisionEvent that can be overriden by children scripts
-        CollisionEvent();
     }
 
     protected virtual void CollisionEvent(){
@@ -30,9 +30,10 @@ public class H_DetectCollision : MonoBehaviour
         if(collision.gameObject == collidingObject){
             collisionExitEvent?.Invoke();
             collidingObject = null;
+            CollisionExitEvent();
         }
 
-        CollisionExitEvent();
+
     }
 
     protected virtual void CollisionExitEvent(){

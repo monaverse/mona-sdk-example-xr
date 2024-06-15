@@ -27,7 +27,7 @@ MonoBehaviour:
   _monaTags:
   - Default
   _monaAssets:
-  - rid: 9027087556604330179
+  - rid: 9027087577039503512
   _monaTagSource: {fileID: 11400000, guid: 2d86cb8c0bedf384c84e61a74d7b265b, type: 2}
   _tileSet: {fileID: 11400000, guid: 97227b7a45df9364ebab91259570e7ed, type: 2}
   references:
@@ -49,9 +49,8 @@ MonoBehaviour:
       type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
       data:
         _instructionTiles:
-        - rid: 9027087556604330408
+        - rid: 9027087562172006614
         - rid: 9027087556604330146
-        - rid: 9027087556604330409
         _result: 1
         _muted: 0
     - rid: 9027087556604330146
@@ -72,109 +71,7 @@ MonoBehaviour:
         _loopAudioName: 
         _wait: 0
         _waitName: 
-    - rid: 9027087556604330179
-      type: {class: MonaAudioAssets, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
-      data:
-        _name: samples
-        _monaAssets:
-        - rid: 9027087556604330180
-        - rid: 9027087556604330181
-        - rid: 9027087556604330182
-        - rid: 9027087556604330183
-        - rid: 9027087556604330184
-        - rid: 9027087556604330185
-        - rid: 9027087556604330186
-        - rid: 9027087556604330187
-        - rid: 9027087556604330188
-        - rid: 9027087556604330189
-        - rid: 9027087556604330190
-        - rid: 9027087556604330191
-        - rid: 9027087556604330192
-        - rid: 9027087556604330193
-        - rid: 9027087556604330194
-        - rid: 9027087556604330195
-        _monaBodyPrefabs: []
-    - rid: 9027087556604330180
-      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
-      data:
-        _prefabId: perc1
-        _audioClip: {fileID: 8300000, guid: d604adbe043b8234fa33157bd87803ca, type: 3}
-    - rid: 9027087556604330181
-      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
-      data:
-        _prefabId: perc2
-        _audioClip: {fileID: 8300000, guid: 1fe5b4f98ef9b004cacb55aea884e057, type: 3}
-    - rid: 9027087556604330182
-      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
-      data:
-        _prefabId: perc3
-        _audioClip: {fileID: 8300000, guid: 456497e769e779542bd1de20c1ad94d9, type: 3}
-    - rid: 9027087556604330183
-      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
-      data:
-        _prefabId: perc4
-        _audioClip: {fileID: 8300000, guid: 0c71d46dff3ac8840b2f8a18cc1ab747, type: 3}
-    - rid: 9027087556604330184
-      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
-      data:
-        _prefabId: perc5
-        _audioClip: {fileID: 8300000, guid: a63eb2972a42c174aaa1052b5375a71c, type: 3}
-    - rid: 9027087556604330185
-      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
-      data:
-        _prefabId: perc6
-        _audioClip: {fileID: 8300000, guid: 9bfde78045f381548b319e13b224dbe3, type: 3}
-    - rid: 9027087556604330186
-      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
-      data:
-        _prefabId: perc7
-        _audioClip: {fileID: 8300000, guid: 5a1cf69fe3753344aa781fb0beebc961, type: 3}
-    - rid: 9027087556604330187
-      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
-      data:
-        _prefabId: perc8
-        _audioClip: {fileID: 8300000, guid: dd798091ba7993f429fbbc3cab438586, type: 3}
-    - rid: 9027087556604330188
-      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
-      data:
-        _prefabId: perc9
-        _audioClip: {fileID: 8300000, guid: dc6309a555f3a924da6af87efd02e58d, type: 3}
-    - rid: 9027087556604330189
-      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
-      data:
-        _prefabId: perc10
-        _audioClip: {fileID: 8300000, guid: 154ad3fa3dab9164fb13b6944b642cd1, type: 3}
-    - rid: 9027087556604330190
-      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
-      data:
-        _prefabId: perc11
-        _audioClip: {fileID: 8300000, guid: 4ff2c94681e7d5240baa010c8df27544, type: 3}
-    - rid: 9027087556604330191
-      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
-      data:
-        _prefabId: perc12
-        _audioClip: {fileID: 8300000, guid: 3d8b746acef490b4c80ed9ee60c0d724, type: 3}
-    - rid: 9027087556604330192
-      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
-      data:
-        _prefabId: pad1
-        _audioClip: {fileID: 8300000, guid: 38d5b4c8c2b1f504db18459958716795, type: 3}
-    - rid: 9027087556604330193
-      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
-      data:
-        _prefabId: pad2
-        _audioClip: {fileID: 8300000, guid: f6009e6744640c3478519c10b6db7685, type: 3}
-    - rid: 9027087556604330194
-      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
-      data:
-        _prefabId: pad3
-        _audioClip: {fileID: 8300000, guid: 2149e28417a284e4fb6b25e8fade1bec, type: 3}
-    - rid: 9027087556604330195
-      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
-      data:
-        _prefabId: perc11-1
-        _audioClip: {fileID: 8300000, guid: 37aa798d414e2ee4f986bf76c7760aa2, type: 3}
-    - rid: 9027087556604330408
+    - rid: 9027087562172006614
       type: {class: OnHitInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions, asm: com.monaverse.sdk.brains.runtime}
       data:
         _id: OnHit
@@ -182,13 +79,135 @@ MonoBehaviour:
         _category: Proximity
         _muted: 0
         _tag: OculusHand
-    - rid: 9027087556604330409
-      type: {class: LogInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.General, asm: com.monaverse.sdk.brains.runtime}
+    - rid: 9027087577039503512
+      type: {class: MonaAudioAssets, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
       data:
-        _id: Log
-        _name: Log
-        _category: Adv Coding
-        _muted: 0
-        _message: 
-        _messageValueName: 
-        _prefix: TOUCH2
+        _name: samples
+        _monaAssets:
+        - rid: 9027087577039503513
+        - rid: 9027087577039503514
+        - rid: 9027087577039503515
+        - rid: 9027087577039503516
+        - rid: 9027087577039503517
+        - rid: 9027087577039503518
+        - rid: 9027087577039503519
+        - rid: 9027087577039503520
+        - rid: 9027087577039503521
+        - rid: 9027087577039503522
+        - rid: 9027087577039503523
+        - rid: 9027087577039503524
+        - rid: 9027087577039503525
+        - rid: 9027087577039503526
+        - rid: 9027087577039503527
+        - rid: 9027087577039503528
+        - rid: 9027087577039503529
+        - rid: 9027087577039503530
+        - rid: 9027087577039503531
+        - rid: 9027087577039503532
+        - rid: 9027087577039503533
+        _monaBodyPrefabs: []
+    - rid: 9027087577039503513
+      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _prefabId: perc1
+        _audioClip: {fileID: 8300000, guid: d604adbe043b8234fa33157bd87803ca, type: 3}
+    - rid: 9027087577039503514
+      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _prefabId: perc2
+        _audioClip: {fileID: 8300000, guid: 1fe5b4f98ef9b004cacb55aea884e057, type: 3}
+    - rid: 9027087577039503515
+      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _prefabId: perc3
+        _audioClip: {fileID: 8300000, guid: 456497e769e779542bd1de20c1ad94d9, type: 3}
+    - rid: 9027087577039503516
+      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _prefabId: perc4
+        _audioClip: {fileID: 8300000, guid: 0c71d46dff3ac8840b2f8a18cc1ab747, type: 3}
+    - rid: 9027087577039503517
+      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _prefabId: perc5
+        _audioClip: {fileID: 8300000, guid: a63eb2972a42c174aaa1052b5375a71c, type: 3}
+    - rid: 9027087577039503518
+      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _prefabId: perc6
+        _audioClip: {fileID: 8300000, guid: 9bfde78045f381548b319e13b224dbe3, type: 3}
+    - rid: 9027087577039503519
+      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _prefabId: perc7
+        _audioClip: {fileID: 8300000, guid: 5a1cf69fe3753344aa781fb0beebc961, type: 3}
+    - rid: 9027087577039503520
+      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _prefabId: perc8
+        _audioClip: {fileID: 8300000, guid: dd798091ba7993f429fbbc3cab438586, type: 3}
+    - rid: 9027087577039503521
+      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _prefabId: perc9
+        _audioClip: {fileID: 8300000, guid: dc6309a555f3a924da6af87efd02e58d, type: 3}
+    - rid: 9027087577039503522
+      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _prefabId: perc10
+        _audioClip: {fileID: 8300000, guid: 154ad3fa3dab9164fb13b6944b642cd1, type: 3}
+    - rid: 9027087577039503523
+      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _prefabId: perc11
+        _audioClip: {fileID: 8300000, guid: 4ff2c94681e7d5240baa010c8df27544, type: 3}
+    - rid: 9027087577039503524
+      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _prefabId: perc12
+        _audioClip: {fileID: 8300000, guid: 3d8b746acef490b4c80ed9ee60c0d724, type: 3}
+    - rid: 9027087577039503525
+      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _prefabId: pad1
+        _audioClip: {fileID: 8300000, guid: 38d5b4c8c2b1f504db18459958716795, type: 3}
+    - rid: 9027087577039503526
+      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _prefabId: pad2
+        _audioClip: {fileID: 8300000, guid: f6009e6744640c3478519c10b6db7685, type: 3}
+    - rid: 9027087577039503527
+      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _prefabId: pad3
+        _audioClip: {fileID: 8300000, guid: 2149e28417a284e4fb6b25e8fade1bec, type: 3}
+    - rid: 9027087577039503528
+      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _prefabId: perc11-1
+        _audioClip: {fileID: 8300000, guid: 37aa798d414e2ee4f986bf76c7760aa2, type: 3}
+    - rid: 9027087577039503529
+      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _prefabId: flower1
+        _audioClip: {fileID: 8300000, guid: 1a5334920a0d22644932de167cd1ea20, type: 3}
+    - rid: 9027087577039503530
+      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _prefabId: flower2
+        _audioClip: {fileID: 8300000, guid: b539a9ddb7210984dba2c08d2e83ad8c, type: 3}
+    - rid: 9027087577039503531
+      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _prefabId: flower3
+        _audioClip: {fileID: 8300000, guid: 613ebad91825db443a0aa93c087657f8, type: 3}
+    - rid: 9027087577039503532
+      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _prefabId: flower4
+        _audioClip: {fileID: 8300000, guid: fa84b8b878d84f2409afc4e037aa10a1, type: 3}
+    - rid: 9027087577039503533
+      type: {class: MonaAudioAsset, ns: Mona.SDK.Core.Assets, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _prefabId: flower5
+        _audioClip: {fileID: 8300000, guid: 7a7a96dd74bca3748aadf35031996f10, type: 3}

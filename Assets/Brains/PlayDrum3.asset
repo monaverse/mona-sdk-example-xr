@@ -49,8 +49,8 @@ MonoBehaviour:
       type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
       data:
         _instructionTiles:
-        - rid: 9027087556604330213
-        - rid: 9027087556604330214
+        - rid: 9027087562172006498
+        - rid: 9027087562172006615
         _result: 1
         _muted: 0
     - rid: 9027087556604330196
@@ -155,26 +155,22 @@ MonoBehaviour:
       data:
         _prefabId: perc11-1
         _audioClip: {fileID: 8300000, guid: 37aa798d414e2ee4f986bf76c7760aa2, type: 3}
-    - rid: 9027087556604330213
-      type: {class: OnNearInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions, asm: com.monaverse.sdk.brains.runtime}
+    - rid: 9027087562172006498
+      type: {class: OnHitInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions, asm: com.monaverse.sdk.brains.runtime}
       data:
-        _id: OnNear
-        _name: When Near
+        _id: OnHit
+        _name: On Touch
         _category: Proximity
         _muted: 0
         _tag: OculusHand
-        _distance: 0.5
-        _distanceValueName: 
-        _fieldOfView: 180
-        _fieldOfViewValueName: 
-    - rid: 9027087556604330214
+    - rid: 9027087562172006615
       type: {class: PlayAudioInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Audio, asm: com.monaverse.sdk.brains.runtime}
       data:
         _id: PlayAudio
         _name: Play Audio
         _category: Audio
         _muted: 0
-        _monaAsset: perc11-1
+        _monaAsset: perc12
         _volume: 1
         _volumeName: 
         _pitch: 1
