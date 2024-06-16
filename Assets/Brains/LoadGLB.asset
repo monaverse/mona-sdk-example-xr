@@ -97,7 +97,7 @@ MonoBehaviour:
         _assetUrlName: Url
         _offset: {x: 0, y: 0, z: 0}
         _eulerAngles: {x: 0, y: 0, z: 0}
-        _scale: {x: 0.1, y: 0.1, z: 0.1}
+        _scale: {x: 0.3, y: 0.3, z: 0.3}
         _poolSize: 1
         _scaleToFit: 1
         _bottomPivot: 1
