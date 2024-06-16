@@ -105,9 +105,11 @@ MonoBehaviour:
   - rid: 8029245330632999024
   - rid: 8029245330632999059
   - rid: 8029245330632999026
-  - rid: 8029245385937780928
+  - rid: 9027087512324800569
+  - rid: 9027087512324800526
   - rid: 8029245375488720896
   - rid: 8029245374732697603
+  - rid: 8029245385937780928
   references:
     version: 2
     RefIds:
@@ -679,5 +681,17 @@ MonoBehaviour:
       type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
       data:
         _tag: TempGround
+        _isPlayerTag: 0
+        _isEditable: 1
+    - rid: 9027087512324800526
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: Instrument
+        _isPlayerTag: 0
+        _isEditable: 1
+    - rid: 9027087512324800569
+      type: {class: MonaTagItem, ns: Mona.SDK.Brains.Core.ScriptableObjects, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _tag: OculusHand
         _isPlayerTag: 0
         _isEditable: 1

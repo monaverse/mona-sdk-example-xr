@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec73015eeda9a7746a62d47a48b18696, type: 3}
+  m_Name: LoadGLB
+  m_EditorClassIdentifier: 
+  _name: LoadGLB
+  _propertyType: 0
+  _loggingEnabled: 0
+  _legacyMonaPlatforms: 0
+  _sourceUrl: 
+  _defaultVariables:
+    rid: 8029245596231532544
+  _priority: 0
+  _corePage:
+    rid: 8029245596231532545
+  _statePages: []
+  _began: 0
+  _monaTags:
+  - Default
+  _monaAssets: []
+  _monaTagSource: {fileID: 11400000, guid: 2d86cb8c0bedf384c84e61a74d7b265b, type: 2}
+  _tileSet: {fileID: 11400000, guid: 97227b7a45df9364ebab91259570e7ed, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 8029245596231532544
+      type: {class: MonaBrainVariables, ns: Mona.SDK.Brains.Core.State, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _values:
+        - rid: 8029245596231532547
+    - rid: 8029245596231532545
+      type: {class: MonaBrainPage, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructions:
+        - rid: 8029245596231532546
+        _name: Core
+        _isCore: 1
+        _isActive: 0
+    - rid: 8029245596231532546
+      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructionTiles:
+        - rid: 8029245596231532548
+        - rid: 8029245596231532549
+        - rid: 8029245596231532550
+        _result: 1
+        _muted: 0
+    - rid: 8029245596231532547
+      type: {class: MonaVariablesString, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _name: Url
+        _value: 
+    - rid: 8029245596231532548
+      type: {class: OnSelectTokenInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnSelectToken
+        _name: Select Token
+        _category: Blockchain
+        _muted: 0
+    - rid: 8029245596231532549
+      type: {class: CopyTokenInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Blockchain, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: CopyToken
+        _name: Copy Token
+        _category: Blockchain
+        _muted: 0
+        _source: 0
+        _targetValue: Url
+        _traitName: 
+        _targetTraitValue: 
+        _defaultTraitValue: 
+        _defaultTraitValueName: 
+    - rid: 8029245596231532550
+      type: {class: ChangeAvatarInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Character, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: ChangeAvatar
+        _name: Change Avatar/Skin
+        _category: Visuals
+        _muted: 0
+        _target: 10
+        _targetTag: 
+        _useUri: 1
+        _importAnimation: 0
+        _reuseController: 1
+        _monaAsset: 
+        _monaAssetName: 
+        _assetUri: 
+        _assetUrlName: Url
+        _offset: {x: 0, y: 0, z: 0}
+        _eulerAngles: {x: 0, y: 0, z: 0}
+        _scale: {x: 0.3, y: 0.3, z: 0.3}
+        _poolSize: 1
+        _scaleToFit: 1
+        _bottomPivot: 1
+        _importLights: 0
+        _includeAttached: 1
+        _includeAttachedName: 
